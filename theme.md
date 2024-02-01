@@ -12,3 +12,4 @@ see the assets folder at the top level for more details.
 * [7025](https://github.com/zed-industries/zed/pull/7025)
 * [7023](https://github.com/zed-industries/zed/pull/7023)
 * [Auto switching light/dark theme according to system settings #6881](https://github.com/zed-industries/zed/pull/6881)
+* [Add experimental.theme_overrides to settings file #6791](https://github.com/zed-industries/zed/pull/6791)
