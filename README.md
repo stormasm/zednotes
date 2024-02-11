@@ -1,6 +1,6 @@
 
 Location of logfile:   
-/Users/ma/Library/Logs/Zed
+/Users/ma/Library/Logs/Zed   
 Location of db file:   
 /Users/ma/Library/Application Support/Zed/db/0-dev   
 Which is a sqlite database.
