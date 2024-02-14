@@ -2,7 +2,7 @@
 
 ## gpui_macros
 
-*gpui_macros/src/style_helpers.rs* is used by *gpui/src/styled.rs*
+*gpui_macros/src/style_helpers.rs* is used exclusively by *gpui/src/styled.rs*
 
 * box_prefixes
 * box_suffixes
