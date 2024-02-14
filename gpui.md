@@ -1,6 +1,6 @@
 
 
-#### gpui_macros
+## gpui_macros
 
 *gpui_macros/src/style_helpers.rs* is used by *gpui/src/styled.rs*
 
