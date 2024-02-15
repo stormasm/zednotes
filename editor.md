@@ -1,7 +1,7 @@
 
 ### Single Line Editor Concepts in Zed
 
-Here is the code *editor.rs*
+Here is the code in *editor.rs*
 
 ```rust
 impl Editor {
