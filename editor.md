@@ -18,8 +18,8 @@ impl Editor {
     }
 ```
 
-This is how you can reference it
+Here is how you can reference it in the codebase...
 
 ```rust
-Editor::single_line
+Editor::single_line(cx);
 ```
