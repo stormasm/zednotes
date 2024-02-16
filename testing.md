@@ -2,7 +2,7 @@
 
 ### Model Examples to Understand Zed Tests
 
-[workspace/src/pane.rs](https://github.com/zed-industries/zed/blob/main/crates/workspace/src/pane.rs#L2095)
+* [workspace/src/pane.rs](https://github.com/zed-industries/zed/blob/main/crates/workspace/src/pane.rs#L2095)
 
 ### Notes on ways to test Zed
 
