@@ -26,8 +26,6 @@
     }
 ```
 
-### Notes on this code
-
 #### gpui/src/app/test_context.rs
 
 ```rust
@@ -51,7 +49,7 @@ where
 }
 ```
 
-#### gpui/src/view -> update
+#### gpui/src/view.rs
 
 ```rust
 /// Updates the view's state with the given function, which is passed a mutable reference and a context.
