@@ -6,7 +6,8 @@ zed/src/main.rs
 * see *workspace::open_new* in *restore_or_create_workspace*
 * app.on_reopen
 
-Location of logfile:   
+### Location of logfiles
+
 /Users/ma/Library/Logs/Zed   
 Location of db file:   
 /Users/ma/Library/Application Support/Zed/db/0-dev   
