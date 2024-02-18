@@ -1,4 +1,11 @@
 
+### How does open_window happen in Zed
+
+zed/src/main.rs
+
+* see *workspace::open_new* in *restore_or_create_workspace*
+* app.on_reopen
+
 Location of logfile:   
 /Users/ma/Library/Logs/Zed   
 Location of db file:   
