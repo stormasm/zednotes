@@ -1,4 +1,12 @@
 
+### How to build Zed
+
+```rust
+git submodule update --init --recursive
+```
+
+* [Noted here on how to build Zed on a mac](https://github.com/zed-industries/zed/blob/main/docs/src/developing_zed__building_zed_macos.md)
+
 ### How does open_window happen in Zed
 
 zed/src/main.rs
