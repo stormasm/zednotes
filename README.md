@@ -1,4 +1,10 @@
 
+### How to have the window pop up immediately when you cargo run
+
+```rust
+cx.activate(true);
+```
+
 ### How to build Zed
 
 ```rust
