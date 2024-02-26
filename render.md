@@ -35,3 +35,5 @@ thanks I will research further and think about this --- its been a question I ha
 Zomatree — Today at 2:54 PM
 if you look at the signature RenderOnce::render takes self while Render::render takes &mut self
 should be easy to figure out when you need which one
+
+[when to use self versus mut self](https://stackoverflow.com/questions/59018413/when-to-use-self-self-mut-self-in-methods)
