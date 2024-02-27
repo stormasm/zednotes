@@ -1,5 +1,5 @@
 
-[isahc](https://github.com/sagebind/isahc) is the default HTTP client library in GPUI ?
+[isahc](https://github.com/sagebind/isahc) is the default HTTP client library in GPUI...
 
 ### How to have the window pop up immediately when you cargo run
 
