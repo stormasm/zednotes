@@ -1,5 +1,5 @@
 
-### Crates who depend on editor
+### Crates that depend on editor
 
 ```rust
 rg editor.workspace -g Cargo.toml
