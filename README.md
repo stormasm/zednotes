@@ -1,5 +1,5 @@
 
-### self.center is the place where the files show up in the workspace
+#### PaneGroup or self.center is the place where the files show up in the workspace
 
 ```rust
 pub struct Workspace {
