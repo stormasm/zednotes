@@ -1,4 +1,45 @@
 
+### self.center is the place where the files show up in the workspace
+
+```rust
+pub struct Workspace {
+    center: PaneGroup
+```
+
+Inside the *Render* of workspace.rs
+
+```rust
+impl Render for Workspace {
+```
+
+```rust
+// Panes
+ .child(
+     div()
+         .flex()
+         .flex_col()
+         .flex_1()
+         .overflow_hidden()
+         /*
+         .child(self.center.render(
+             &self.project,
+             &self.follower_states,
+             self.active_call(),
+             &self.active_pane,
+             self.zoomed.as_ref(),
+             &self.app_state,
+             cx,
+         ))
+         */
+         .children(
+             self.zoomed_position
+                 .ne(&Some(DockPosition::Bottom))
+                 .then(|| self.bottom_dock.clone()),
+         ),
+ )
+ // Right Dock
+```
+
 [isahc](https://github.com/sagebind/isahc) is the default HTTP client library in GPUI...
 
 ### How to have the window pop up immediately when you cargo run
