@@ -40,7 +40,7 @@ impl Render for Workspace {
  // Right Dock
 ```
 
-### DEFAULT_KEYMAP_PATH
+#### DEFAULT_KEYMAP_PATH
 
 Located in settings/src/settings.rs
 
