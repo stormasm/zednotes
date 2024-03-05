@@ -40,9 +40,7 @@ impl Render for Workspace {
  // Right Dock
 ```
 
-#### DEFAULT_KEYMAP_PATH
-
-Located in settings/src/settings.rs
+#### DEFAULT_KEYMAP_PATH is located in settings/src/settings.rs
 
 [isahc](https://github.com/sagebind/isahc) is the default HTTP client library in GPUI...
 
