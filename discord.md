@@ -1,4 +1,6 @@
 
+##### March 05, 2024
+
 Hi, is it possible to store state on a RenderOnce  "component" or how would be the idiomatic way to handle, for example, a toggleable button with internal state?
 
 maxdeviant — Today at 12:10 PM
