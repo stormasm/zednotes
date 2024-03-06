@@ -6,3 +6,5 @@ maxdeviant — Today at 12:10 PM
 The state would need to be stored on a view and passed in. We don’t support components having their own state, currently
 
 [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1214662036257112105)
+
+Continue to take a look further at the continuuing discussion on this topic following this link.
