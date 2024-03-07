@@ -130,7 +130,8 @@ pub trait VisualContext: Context {
 
 ```rust
 /// Contains the state of the full application, and passed as a reference to a variety of callbacks.
-/// Other contexts such as [ModelContext], [WindowContext], and [ViewContext] deref to this type, making it the most general context type.
+/// Other contexts such as [ModelContext], [WindowContext], and [ViewContext] deref to this type,
+/// making it the most general context type.
 /// You need a reference to an `AppContext` to access the state of a [Model].
 pub struct AppContext {
     pub(crate) this: Weak<AppCell>,
