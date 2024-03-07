@@ -40,7 +40,8 @@ pub struct ViewContext<'a, V> {
 }
 ```
 
-##### gpui.rs
+##### gpui.rs : all of the Contexts are *structs* except for these two *traits*
+
 ```rust
 /// The context trait, allows the different contexts in GPUI to be used
 /// interchangeably for certain operations.
@@ -125,8 +126,6 @@ pub trait VisualContext: Context {
         V: ManagedView;
 }
 ```
-
-##### All of the Contexts are *structs* except for these two *traits*
 
 ##### app.rs
 
