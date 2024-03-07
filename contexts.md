@@ -126,6 +126,50 @@ pub trait VisualContext: Context {
 }
 ```
 
+##### app.rs
+
+```rust
+/// Contains the state of the full application, and passed as a reference to a variety of callbacks.
+/// Other contexts such as [ModelContext], [WindowContext], and [ViewContext] deref to this type, making it the most general context type.
+/// You need a reference to an `AppContext` to access the state of a [Model].
+pub struct AppContext {
+    pub(crate) this: Weak<AppCell>,
+    pub(crate) platform: Rc<dyn Platform>,
+    app_metadata: AppMetadata,
+    text_system: Arc<TextSystem>,
+    flushing_effects: bool,
+    pending_updates: usize,
+    pub(crate) actions: Rc<ActionRegistry>,
+    pub(crate) active_drag: Option<AnyDrag>,
+    pub(crate) background_executor: BackgroundExecutor,
+    pub(crate) foreground_executor: ForegroundExecutor,
+    pub(crate) svg_renderer: SvgRenderer,
+    asset_source: Arc<dyn AssetSource>,
+    pub(crate) image_cache: ImageCache,
+    pub(crate) text_style_stack: Vec<TextStyleRefinement>,
+    pub(crate) globals_by_type: FxHashMap<TypeId, Box<dyn Any>>,
+    pub(crate) entities: EntityMap,
+    pub(crate) new_view_observers: SubscriberSet<TypeId, NewViewListener>,
+    pub(crate) windows: SlotMap<WindowId, Option<Window>>,
+    pub(crate) window_handles: FxHashMap<WindowId, AnyWindowHandle>,
+    pub(crate) keymap: Rc<RefCell<Keymap>>,
+    pub(crate) global_action_listeners:
+        FxHashMap<TypeId, Vec<Rc<dyn Fn(&dyn Any, DispatchPhase, &mut Self)>>>,
+    pending_effects: VecDeque<Effect>,
+    pub(crate) pending_notifications: FxHashSet<EntityId>,
+    pub(crate) pending_global_notifications: FxHashSet<TypeId>,
+    pub(crate) observers: SubscriberSet<EntityId, Handler>,
+    // TypeId is the type of the event that the listener callback expects
+    pub(crate) event_listeners: SubscriberSet<EntityId, (TypeId, Listener)>,
+    pub(crate) keystroke_observers: SubscriberSet<(), KeystrokeObserver>,
+    pub(crate) release_listeners: SubscriberSet<EntityId, ReleaseListener>,
+    pub(crate) global_observers: SubscriberSet<TypeId, Handler>,
+    pub(crate) quit_observers: SubscriberSet<(), QuitHandler>,
+    pub(crate) layout_id_buffer: Vec<LayoutId>, // We recycle this memory across layout requests.
+    pub(crate) propagate_event: bool,
+}
+```
+
 ### References
 
 * [contexts.md](https://github.com/zed-industries/zed/blob/main/crates/gpui/docs/contexts.md)
