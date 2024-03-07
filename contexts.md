@@ -126,6 +126,8 @@ pub trait VisualContext: Context {
 }
 ```
 
+##### All of the Contexts are *structs* except for these two *traits*
+
 ##### app.rs
 
 ```rust
