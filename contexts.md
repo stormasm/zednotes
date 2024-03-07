@@ -7,7 +7,38 @@ ModelContext  WindowContext
         ViewContext
 ```
 
-* [Start here](https://github.com/zed-industries/zed/blob/main/crates/gpui/docs/contexts.md)
+##### app/model_context.rs
+```rust
+/// The app context, with specialized behavior for the given model.
+#[derive(Deref, DerefMut)]
+pub struct ModelContext<'a, T> {
+    #[deref]
+    #[deref_mut]
+    app: &'a mut AppContext,
+    model_state: WeakModel<T>,
+}
+```
+
+##### window.rs
+
+```rust
+/// Provides access to application state in the context of a single window. Derefs
+/// to an [`AppContext`], so you can also pass a [`WindowContext`] to any method that takes
+/// an [`AppContext`] and call any [`AppContext`] methods.
+pub struct WindowContext<'a> {
+    pub(crate) app: &'a mut AppContext,
+    pub(crate) window: &'a mut Window,
+}
+
+/// Provides access to application state that is specialized for a particular [`View`].
+/// Allows you to interact with focus, emit events, etc.
+/// ViewContext also derefs to [`WindowContext`], giving you access to all of its methods as well.
+/// When you call [`View::update`], you're passed a `&mut V` and an `&mut ViewContext<V>`.
+pub struct ViewContext<'a, V> {
+    window_cx: WindowContext<'a>,
+    view: &'a View<V>,
+}
+```
 
 ##### gpui.rs
 ```rust
@@ -95,36 +126,6 @@ pub trait VisualContext: Context {
 }
 ```
 
+### References
 
-##### app/model_context.rs
-```rust
-/// The app context, with specialized behavior for the given model.
-#[derive(Deref, DerefMut)]
-pub struct ModelContext<'a, T> {
-    #[deref]
-    #[deref_mut]
-    app: &'a mut AppContext,
-    model_state: WeakModel<T>,
-}
-```
-
-##### window.rs
-
-```rust
-/// Provides access to application state in the context of a single window. Derefs
-/// to an [`AppContext`], so you can also pass a [`WindowContext`] to any method that takes
-/// an [`AppContext`] and call any [`AppContext`] methods.
-pub struct WindowContext<'a> {
-    pub(crate) app: &'a mut AppContext,
-    pub(crate) window: &'a mut Window,
-}
-
-/// Provides access to application state that is specialized for a particular [`View`].
-/// Allows you to interact with focus, emit events, etc.
-/// ViewContext also derefs to [`WindowContext`], giving you access to all of its methods as well.
-/// When you call [`View::update`], you're passed a `&mut V` and an `&mut ViewContext<V>`.
-pub struct ViewContext<'a, V> {
-    window_cx: WindowContext<'a>,
-    view: &'a View<V>,
-}
-```
+* [contexts.md](https://github.com/zed-industries/zed/blob/main/crates/gpui/docs/contexts.md)
