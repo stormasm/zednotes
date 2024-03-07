@@ -38,7 +38,11 @@ pub struct ViewContext<'a, V> {
     window_cx: WindowContext<'a>,
     view: &'a View<V>,
 }
+```
 
+##### view.rs
+
+```rust
 /// A view is a piece of state that can be presented on screen by implementing the [Render] trait.
 /// Views implement [Element] and can composed with other views, and every window is created with a root view.
 pub struct View<V> {
