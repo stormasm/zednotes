@@ -40,7 +40,7 @@ pub struct ViewContext<'a, V> {
 }
 ```
 
-##### gpui.rs : all of the Contexts are *structs* except for these two *traits*
+##### gpui.rs -> all of the Contexts are *structs* except for these two *traits*
 
 ```rust
 /// The context trait, allows the different contexts in GPUI to be used
