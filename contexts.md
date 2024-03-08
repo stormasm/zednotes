@@ -40,6 +40,20 @@ pub struct ViewContext<'a, V> {
 }
 ```
 
+##### app/entity_map.rs
+
+```rust
+/// A strong, well typed reference to a struct which is managed
+/// by GPUI
+#[derive(Deref, DerefMut)]
+pub struct Model<T> {
+    #[deref]
+    #[deref_mut]
+    pub(crate) any_model: AnyModel,
+    pub(crate) entity_type: PhantomData<T>,
+}
+```
+
 ##### view.rs
 
 ```rust
