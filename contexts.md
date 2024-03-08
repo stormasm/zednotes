@@ -54,6 +54,16 @@ pub struct Model<T> {
 }
 ```
 
+##### window.rs
+
+```rust
+// Holds the state for a specific window.
+#[doc(hidden)]
+pub struct Window {
+    pub(crate) root_view: Option<AnyView>,
+    ...
+```
+
 ##### view.rs
 
 ```rust
