@@ -1,4 +1,12 @@
 
+### Summary
+
+* ModelContext is AppContext & a Model
+* WindowContext is AppContext & a Window
+* ViewContext is WindowContext & a View
+* Window has a root View
+* View has a Model
+
 ```
      AppContext
      /        \
