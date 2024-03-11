@@ -8,13 +8,9 @@
 pub trait EventEmitter<E: Any>: 'static {}
 ```
 
-##### window.rs
-
-- [pub fn emit](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/window.rs#L2229)
-
 ##### app.rs
 
-```rust
+```rustg
 /// These effects are processed at the end of each application update cycle.
 pub(crate) enum Effect {
     Notify {
@@ -36,6 +32,10 @@ pub(crate) enum Effect {
 ```
 
 - [pub fn subscribe](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/app.rs#L410)
+
+##### window.rs
+
+- [pub fn emit](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/window.rs#L2229)
 
 ##### References
 
