@@ -14,6 +14,27 @@ pub trait EventEmitter<E: Any>: 'static {}
 
 ##### app.rs
 
+```
+/// These effects are processed at the end of each application update cycle.
+pub(crate) enum Effect {
+    Notify {
+        emitter: EntityId,
+    },
+    Emit {
+        emitter: EntityId,
+        event_type: TypeId,
+        event: Box<dyn Any>,
+    },
+    Refresh,
+    NotifyGlobalObservers {
+        global_type: TypeId,
+    },
+    Defer {
+        callback: Box<dyn FnOnce(&mut AppContext) + 'static>,
+    },
+}
+```
+
 - [pub fn subscribe](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/app.rs#L410)
 
 ##### References
