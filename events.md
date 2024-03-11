@@ -10,7 +10,7 @@ pub trait EventEmitter<E: Any>: 'static {}
 
 ##### app.rs
 
-```rustg
+```rust
 /// These effects are processed at the end of each application update cycle.
 pub(crate) enum Effect {
     Notify {
