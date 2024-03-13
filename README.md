@@ -11,8 +11,8 @@ Implementing a raw text editor is just easier with the imperative API. The layou
 
 So, using the imperative API is probably a bit easier 😄
 
-[ref](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502)
-
+[ref 01](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502)
+[ref 02](https://discord.com/channels/869392257814519848/1199799855007158352/1217280636222443591)
 
 #### PaneGroup or self.center is the place where the files show up in the workspace
 
