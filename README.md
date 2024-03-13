@@ -3,7 +3,7 @@
 
 Declarative would be a ui described by implementing Render or RenderOnce and imperative would be described by implementing Element.
 
-The *declarative* API tries to feel web-like, it gives you a flex layout (just like the CSS flexbox) and lets you think about "<div> analogs" and how they fit together.
+The *declarative* API tries to feel web-like, it gives you a flex layout (just like the CSS flexbox) and lets you think about `<div> analogs` and how they fit together.
 
 The *imperative* API is in terms of rectangles,  pixels etc. It lets you define your own concepts and layout algorithms and tries to stay out of the way.
 
