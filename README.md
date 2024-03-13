@@ -1,4 +1,11 @@
 
+#### Imperative vs Declarative
+
+Declarative would be a ui described by implementing Render or RenderOnce and imperative would be described by implementing Element.
+
+[ref](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502)
+
+
 #### PaneGroup or self.center is the place where the files show up in the workspace
 
 ```rust
