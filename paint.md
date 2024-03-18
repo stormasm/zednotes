@@ -1,7 +1,7 @@
 
 ##### March 17, 2024
 
-##### Question
+##### Tpisto Question
 
 Thank you for @Nowlow for good question. I'm trying to figure out exactly the same that what is the way to make stateful component. By looking the Zed repo I see that they are not using models for state, but there is that "Stateful" struct that wraps the stateful component. @mikayla I see that you have done the Stateful struct, please could you explain how it works? I have tried to understand it, but it seems just to be wrapper that just puts the element into Stateful { element: YourElement }... My goal is to create following simple component as stateful example. So that the border green state (on_mouse_down) is handled by the component itself. The value (true/false) is easy, because the parent will pass it down.
 
