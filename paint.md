@@ -1,3 +1,19 @@
+
+##### March 17, 2024
+
+##### Question
+
+Thank you for @Nowlow for good question. I'm trying to figure out exactly the same that what is the way to make stateful component. By looking the Zed repo I see that they are not using models for state, but there is that "Stateful" struct that wraps the stateful component. @mikayla I see that you have done the Stateful struct, please could you explain how it works? I have tried to understand it, but it seems just to be wrapper that just puts the element into Stateful { element: YourElement }... My goal is to create following simple component as stateful example. So that the border green state (on_mouse_down) is handled by the component itself. The value (true/false) is easy, because the parent will pass it down.
+
+So, the goals:
+
+- Stateful component should be Element that it can be used like .child(checkbox().id(1).on_click(...
+- I would like to understand how to make stateful component without Model and action subscribers to hold "mouse_is_down" value for my component.
+- I would like to understand how the Stateful construct works in GPUI for your elements.
+- Extra: Would be absolutely wonderful and would make my day if someone could nicely explain the Element trait "before_layout", "after_layout" and "paint" concepts.
+
+##### Mikayla Answer
+
 The stateful component portion of Zed is incomplete. It's supposed to fill exactly the role you're looking for, but it currently doesn't actually have a way of storing it's only while visible state internally, or exposing it externally. Your best option is to store all of the state on the parent, either wrapped in a RefLock or a GPUI Model, and then hand it into your element. This is how the List and Uniform list elements work today.
 
 In GPUI, painting your scene involves three traversals of the whole DAG:
