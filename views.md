@@ -1,5 +1,27 @@
 ### rg observe_new_views
 
+```rust
+/// Arrange for the given function to be invoked whenever a view of the specified type is created.
+/// The function will be passed a mutable reference to the view along with an appropriate context.
+
+ pub fn observe_new_views<V: 'static>(
+     &mut self,
+     on_new: impl 'static + Fn(&mut V, &mut ViewContext<V>),
+ ) -> Subscription {
+     self.new_view_observer(
+         TypeId::of::<V>(),
+         Box::new(move |any_view: AnyView, cx: &mut WindowContext| {
+             any_view
+                 .downcast::<V>()
+                 .unwrap()
+                 .update(cx, |view_state, cx| {
+                     on_new(view_state, cx);
+                 })
+         }),
+     )
+ }
+```
+
 crates/vim/src/vim.rs
 85:    cx.observe_new_views(|workspace: &mut Workspace, cx| register(workspace, cx))
 
@@ -110,4 +132,3 @@ crates/collab_ui/src/collab_titlebar_item.rs
 
   crates/assistant/src/assistant_panel.rs
   54:    cx.observe_new_views(
-  
