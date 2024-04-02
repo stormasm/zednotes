@@ -4,7 +4,7 @@
 This shows which *Items* are similar to the WelcomePage
 
 - debug: open syntax tree view   
-- debug: open language server logs   
+- debug: open language server logs - LspLogView
 - zed: extensions   
 - diagnostics: deploy   
 - project search:   

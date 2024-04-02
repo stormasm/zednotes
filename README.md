@@ -85,6 +85,8 @@ zed/src/main.rs
 
 ### Location of logfiles
 
+zed: open logs
+
 /Users/ma/Library/Logs/Zed   
 Location of db file:   
 /Users/ma/Library/Application Support/Zed/db/0-dev   
