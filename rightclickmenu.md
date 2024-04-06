@@ -36,7 +36,7 @@ left and in the case of terminal to the right for *bottom*.
 
 ### Kallax
 
-The reason I got turned on to this idea is because an old version of Kallax
+The reason I got turned on to this idea in the first place is because an old version of Kallax
 used overlays which are now called [anchored](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/elements/anchored.rs).
 
 Anchored is used in Kallax as a dropdown to both *play* and *queue* a track.
