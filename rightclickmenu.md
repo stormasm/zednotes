@@ -16,11 +16,18 @@ used overlays which are now called [anchored](https://github.com/zed-industries/
 
 Anchored is used in Kallax as a dropdown to both *play* and *queue* a track.
 
+This zed commit point is what Kallax used to use in its Cargo.lock where the
+old overlays work fine.
+
 ```rust
 gco 4dc61f7ccd6ac77a6f03d90d7ee80e855b0f32b9
 ```
 
+This is where you land if you check out the above commit point...
+
 https://github.com/zed-industries/zed/tree/4dc61f7ccd6ac77a6f03d90d7ee80e855b0f32b9
+
+This PR is where overlay was renamed to anchored
 
 ### gpui: Rework overlay element #9911
 https://github.com/zed-industries/zed/pull/9911
