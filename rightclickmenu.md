@@ -13,6 +13,8 @@ Right click menus are used in
 
 You find *right click menus* in Zed in two key places
 
+They are on the editor tabs at the top of the screen and provide some interesting functionality including closing tabs that are to right or the left along with closing all of the tabs etc...
+
 They are on the status bar buttons at the bottom of the screen including the
 
 - terminal panel
