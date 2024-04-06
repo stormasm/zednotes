@@ -57,3 +57,5 @@ This PR is where overlay was renamed to anchored: [Rework overlay element](https
 ### References
 
 - [right_click_menu.rs history](https://github.com/zed-industries/zed/commits/main/crates/ui/src/components/right_click_menu.rs)
+- [right click menus are built with ContextMenus](https://github.com/zed-industries/zed/blob/main/crates/ui/src/components/context_menu.rs)
+- Kallax uses ContextMenus as noted above and because I didn't understand what it was I renamed it to `Dropdown` when I refactored Kallax early on...
