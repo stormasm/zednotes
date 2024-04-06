@@ -31,7 +31,7 @@ const POSITIONS: [DockPosition; 3] = [
  ];
 ```
 
-As I learn to understand this concept better you will see that as you select
+As I begin to understand this concept better you will see that as you select
 the different states they move around in the status bar from the right to the
 left and in the case of terminal to the right for *bottom*.
 
