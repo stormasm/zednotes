@@ -1,5 +1,20 @@
 
-overlays come up in Kallax which uses this branch point
+
+```rust
+rg right_click_menu
+```
+
+Right click menus are used in
+- workspace/src/dock.rs
+- workspace/src/pane.rs
+
+
+### Kallax
+
+The reason I got turned on to this idea is because an old version of Kallax
+used overlays which are now called [anchored](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/elements/anchored.rs).
+
+Anchored is used in Kallax as a dropdown to both *play* and *queue* a track.
 
 ```rust
 gco 4dc61f7ccd6ac77a6f03d90d7ee80e855b0f32b9
