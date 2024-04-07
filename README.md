@@ -1,4 +1,6 @@
 
+- [logging](./logging.md)
+
 #### Imperative vs Declarative
 
 Declarative would be a ui described by implementing Render or RenderOnce and imperative would be described by implementing Element.
@@ -82,18 +84,6 @@ zed/src/main.rs
 
 * see *workspace::open_new* in *restore_or_create_workspace*
 * app.on_reopen
-
-### Location of logfiles
-
-zed: open logs
-
-/Users/ma/Library/Logs/Zed   
-Location of db file:   
-/Users/ma/Library/Application Support/Zed/db/0-dev   
-Which is a sqlite database.
-
-In main.rs see *init_paths* which points to LOGS_DIR   
-which is located in crates/util/src/paths.rs
 
 ```rust
 rg picker -g Cargo.toml
