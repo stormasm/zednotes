@@ -46,3 +46,45 @@ fn discard(&mut self, cx: &mut ModelContext<Self>) {
     }
 }
 ```
+
+### zed/src/main.rs
+
+```rust
+fn init_logger() {
+        let level = LevelFilter::Info;
+
+        // Prevent log file from becoming too large.
+        const KIB: u64 = 1024;
+        const MIB: u64 = 1024 * KIB;
+        const MAX_LOG_BYTES: u64 = MIB;
+        if std::fs::metadata(&*paths::LOG).map_or(false, |metadata| metadata.len() > MAX_LOG_BYTES)
+        {
+            let _ = std::fs::rename(&*paths::LOG, &*paths::OLD_LOG);
+        }
+
+        match OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open(&*paths::LOG)
+        {
+            Ok(log_file) => {
+                let config = ConfigBuilder::new()
+                    .set_time_format_str("%T")
+                    .set_time_to_local(true)
+                    .set_location_level(LevelFilter::Info)
+                    .build();
+
+                simplelog::WriteLogger::init(level, config, log_file)
+                    .expect("could not initialize logger");
+            }
+            Err(err) => {
+                init_stdout_logger();
+                log::error!(
+                    "could not open log file, defaulting to stdout logging: {}",
+                    err
+                );
+            }
+        }
+
+}
+```
