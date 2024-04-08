@@ -1,4 +1,7 @@
 
+- [simplelog api](https://docs.rs/simplelog/0.12.2/simplelog/)
+- [simplelog](https://github.com/drakulix/simplelog.rs)
+
 ### How Logging works in Zed
 
 zed/src/main.rs
