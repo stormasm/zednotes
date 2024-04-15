@@ -1,5 +1,5 @@
 
-### Ripgrep aka rg
+### rg
 
 ```rust
 rg 'impl ModalView for '
