@@ -1,4 +1,16 @@
 
+### Ripgrep aka rg
+
+```rust
+rg 'impl ModalView for '
+```
+
+### New Features
+
+- editor: toggle git blame
+
+### logging
+
 - [logging](./logging.md)
 
 #### Imperative vs Declarative
