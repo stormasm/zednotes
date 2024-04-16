@@ -1,8 +1,7 @@
 
 ### when is canvas used and what is it used for ?
 
-The main use case for the canvas is dropping down into an imperative rendering mechanism
-You aren't constrained by the needs of flexbox and UI layout, you're just given a rectangle to draw on using GPUI primitives (Though you still need to describe the area of that rectangle using the wider UI layout mechanisms) I'm not sure what's up with your case though phisch. We use it for stuff like the tiled background on the image viewer, no need to have a whole layout engine just to render that!
+The main use case for the canvas is dropping down into an imperative rendering mechanism.  You aren't constrained by the needs of flexbox and UI layout, you're just given a rectangle to draw on using GPUI primitives (Though you still need to describe the area of that rectangle using the wider UI layout mechanisms). I'm not sure what's up with your case though phisch. We use it for stuff like the tiled background on the image viewer, no need to have a whole layout engine just to render that!
 
 - [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1229556536536465529)
 
