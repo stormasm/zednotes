@@ -1,4 +1,18 @@
 
+### picker.rs
+
+```rust
+fn on_input_editor_event(
+    &mut self,
+    _: View<Editor>,
+    event: &editor::EditorEvent,
+    cx: &mut ViewContext<Self>,
+) {
+```
+
+on_input_editor_event is NEVER being called when you hit the backspace key
+
+
 ```rust
 let now = std::time::SystemTime::now();
 println!("{:?}",now);
