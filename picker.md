@@ -1,4 +1,13 @@
 
+```rust
+let now = std::time::SystemTime::now();
+println!("{:?}",now);
+```
+
+EditorMode::SingleLine
+Editor::single_line(cx);
+EditorEvent
+
 ### Issues
 
 editor/src/editor.rs
@@ -10,6 +19,12 @@ pub fn backspace(&mut self, _: &Backspace, cx: &mut ViewContext<Self>) {
 ```
 
 backspace is not being fired on storybook picker
+
+editor/src/element.rs calls
+
+```rust
+register_action(view, cx, Editor::backspace);
+```
 
 ### Examples
 
