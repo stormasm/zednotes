@@ -8,6 +8,8 @@ fn on_input_editor_event(
     event: &editor::EditorEvent,
     cx: &mut ViewContext<Self>,
 ) {
+    let now = std::time::SystemTime::now();
+    println!("picker.rs: on_input_editor_event {:?}", now);
 ```
 
 on_input_editor_event is NEVER being called when you hit the backspace key
