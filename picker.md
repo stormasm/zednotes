@@ -12,8 +12,7 @@ fn on_input_editor_event(
     println!("picker.rs: on_input_editor_event {:?}", now);
 ```
 
-on_input_editor_event is NEVER being called when you hit the backspace key
-
+*on_input_editor_event* is NEVER being called when you hit the backspace key
 
 ```rust
 let now = std::time::SystemTime::now();
