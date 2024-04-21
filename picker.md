@@ -4,9 +4,9 @@ let now = std::time::SystemTime::now();
 println!("{:?}",now);
 ```
 
-EditorMode::SingleLine
-Editor::single_line(cx);
-EditorEvent
+- EditorMode::SingleLine
+- Editor::single_line(cx);
+- EditorEvent
 
 ### Issues
 
