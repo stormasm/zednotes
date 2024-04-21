@@ -1,4 +1,16 @@
 
+### Issues
+
+editor/src/editor.rs
+
+```rust
+pub fn backspace(&mut self, _: &Backspace, cx: &mut ViewContext<Self>) {
+     println!("editor backspace");
+     self.transact(cx, |this, cx| {
+```
+
+backspace is not being fired on storybook picker
+
 ### Examples
 
 - file_finder
