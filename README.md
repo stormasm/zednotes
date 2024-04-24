@@ -1,4 +1,13 @@
 
+### how to simulate two instances of zed
+
+i’m doing a lightning talk on zed tonight. does anyone know of an easy way to demo multiplayer coding without another mac? i’m having trouble getting two instances of zed running with separate accounts because of the auto login behavior.
+
+mikayla —
+Hi @benfe2003 , the best way is to probably build it from source in release mode, then you can use  script/zed-local -2 to open two Zed instances and start pairing
+
+[discord](https://discord.com/channels/869392257814519848/873293828805771284/1232751746116489246)
+
 ### when is canvas used and what is it used for ?
 
 The main use case for the canvas is dropping down into an imperative rendering mechanism.  You aren't constrained by the needs of flexbox and UI layout, you're just given a rectangle to draw on using GPUI primitives (Though you still need to describe the area of that rectangle using the wider UI layout mechanisms). I'm not sure what's up with your case though phisch. We use it for stuff like the tiled background on the image viewer, no need to have a whole layout engine just to render that!
