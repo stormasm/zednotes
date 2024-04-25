@@ -129,3 +129,7 @@ Editor::new_file
 ```rust
 initialize_workspace
 ```
+
+### Zed Youtube Videos
+
+- [duane bester](https://www.youtube.com/playlist?list=PLzIkykhdNahwxfVbxgZR69TQSsJc-6Rqq)
