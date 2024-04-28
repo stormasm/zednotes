@@ -28,7 +28,7 @@ rg 'impl ModalView for '
 
 - [logging](./logging.md)
 
-#### Imperative vs Declarative
+### Imperative vs Declarative
 
 Declarative would be a ui described by implementing Render or RenderOnce and imperative would be described by implementing Element.
 
@@ -40,8 +40,10 @@ Implementing a raw text editor is just easier with the imperative API. The layou
 
 So, using the imperative API is probably a bit easier 😄
 
-[ref 01](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502) <--->
-[ref 02](https://discord.com/channels/869392257814519848/1199799855007158352/1217280636222443591)
+- [discord ref 01](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502)
+- [discord ref 02](https://discord.com/channels/869392257814519848/1199799855007158352/1217280636222443591)
+
+### Workspaces
 
 #### PaneGroup or self.center is the place where the files show up in the workspace
 
@@ -83,6 +85,8 @@ impl Render for Workspace {
  )
  // Right Dock
 ```
+
+- [More notes on workspaces](./workspace.md)
 
 #### DEFAULT_KEYMAP_PATH is located in settings/src/settings.rs
 
