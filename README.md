@@ -45,6 +45,13 @@ So, using the imperative API is probably a bit easier 😄
 
 ### Workspaces
 
+The ProjectPanel only gets loaded once in [zed.rs](https://github.com/zed-industries/zed/blob/main/crates/zed/src/zed.rs).  In other words there is only one of them and it is the *Project Panel* on the left side of the screen.
+
+```rust
+cx.spawn(|workspace_handle, mut cx| async move {
+    let project_panel = ProjectPanel::load(workspace_handle.clone(), cx.clone());
+```
+
 #### PaneGroup or self.center is the place where the files show up in the workspace
 
 ```rust
