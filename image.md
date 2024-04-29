@@ -16,7 +16,9 @@
 gco 86aa352
 ```
 
-To get to this spot in the code and see the SVG actually rendered prior to the code being pulled so developers can actually edit their SVG files.
+Run the above command   
+To get to this spot in the code and see the SVG actually rendered   
+prior to the code being pulled so developers can actually edit their SVG files.
 
 ### References for future work on viewing SVG files in Zed
 
