@@ -52,6 +52,8 @@ cx.spawn(|workspace_handle, mut cx| async move {
     let project_panel = ProjectPanel::load(workspace_handle.clone(), cx.clone());
 ```
 
+To find out what commands are available in the project panel click on one of the rust files in the project panel and then bring up the command palette and type *project panel*
+
 #### PaneGroup or self.center is the place where the files show up in the workspace
 
 ```rust
