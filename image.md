@@ -6,8 +6,7 @@
 
 ### Viewing SVG files in Zed
 
-[]()
-
+- [gpui/src/svg_renderer.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/svg_renderer.rs)
 - [Page of commits on April 11, 2024](https://github.com/zed-industries/zed/commits/main/?after=2386ae9f0e31f9eba7410ed3f5473bf33f38af9f+279)
 - [For this PR: Do not show image viewer for SVGs #10435](https://github.com/zed-industries/zed/pull/10435)
 - [Browse repository at PR before #10435 which has a commit point of 86aa352](https://github.com/zed-industries/zed/tree/86aa352ad9332eb8c6608231b4227cc9406a5fa4)
