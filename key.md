@@ -1,4 +1,8 @@
 
+### Documentation
+
+- [Key Dispatch](https://github.com/zed-industries/zed/blob/main/crates/gpui/docs/key_dispatch.md)
+
 #### gpui/src/window.rs
 
 ```rust
