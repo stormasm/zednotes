@@ -10,7 +10,7 @@ GPUI provides a range of smaller services that are useful for building complex a
 
 - [interactive.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/interactive.rs)
 
-### interactive.rs provides the key trait definitions for 
+#### interactive.rs provides the key trait definitions
 
 ```rust
 /// An event from a platform input source.
