@@ -8,6 +8,25 @@ GPUI provides a range of smaller services that are useful for building complex a
 
 - Actions are user-defined structs that are used for converting keystrokes into logical operations in your UI. Use this for implementing keyboard shortcuts, such as cmd-q. See the `action` module for more information.
 
+- [interactive.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/interactive.rs)
+
+### interactive.rs provides the key trait definitions for 
+
+```rust
+/// An event from a platform input source.
+pub trait InputEvent: Sealed + 'static {
+    /// Convert this event into the platform input enum.
+    fn to_platform_input(self) -> PlatformInput;
+}
+
+/// A key event from the platform.
+pub trait KeyEvent: InputEvent {}
+
+/// A mouse event from the platform.
+pub trait MouseEvent: InputEvent {}
+```
+
+
 #### gpui/src/window.rs
 
 ```rust
