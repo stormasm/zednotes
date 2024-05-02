@@ -4,7 +4,7 @@
 - [Key Dispatch](https://github.com/zed-industries/zed/blob/main/crates/gpui/docs/key_dispatch.md)
 - [Gpui Readme](https://github.com/zed-industries/zed/blob/main/crates/gpui/README.md)
 
-In addition to the systems above, GPUI provides a range of smaller services that are useful for building complex applications:
+GPUI provides a range of smaller services that are useful for building complex applications:
 
 - Actions are user-defined structs that are used for converting keystrokes into logical operations in your UI. Use this for implementing keyboard shortcuts, such as cmd-q. See the `action` module for more information.
 
