@@ -143,6 +143,15 @@ Editor::new_file
 initialize_workspace
 ```
 
+#### crates/gpui/src/app.rs
+
+- app.rs -> contains the fn *open_window*
+- which calls -> Window::new
+- window.rs -> contains the fn *Window:new*
+- which calls -> *dispatch_event*
+- window.rs contains the fn *dispatch_event*
+- which calls -> *dispatch_key_event* and *dispatch_mouse_event*
+
 ### Zed Youtube Videos
 
 - [duane bester](https://www.youtube.com/playlist?list=PLzIkykhdNahwxfVbxgZR69TQSsJc-6Rqq)
