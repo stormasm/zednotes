@@ -146,7 +146,7 @@ initialize_workspace
 #### crates/gpui/src/app.rs
 
 ```rust
-- app.rs -> contains the fn *open_window*
+- app.rs -> contains the fn open_window
 - which calls -> Window::new
 - window.rs -> contains the fn *Window:new*
 - which calls -> *dispatch_event*
