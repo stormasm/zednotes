@@ -120,10 +120,6 @@ git submodule update --init --recursive
 
 ### How does open_window happen in Zed
 
-#### zed/src/main.rs
-
-* see *workspace::open_new* in *restore_or_create_workspace*
-
 #### crates/zed/src/main.rs
 
 ```rust
