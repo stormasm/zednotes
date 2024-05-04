@@ -147,11 +147,11 @@ initialize_workspace
 
 ```rust
 - app.rs -> contains the fn open_window
-- which calls -> Window::new
-- window.rs -> contains the fn *Window:new*
-- which calls -> *dispatch_event*
-- window.rs contains the fn *dispatch_event*
-- which calls -> *dispatch_key_event* and *dispatch_mouse_event*
+- which calls -> fn Window::new
+- window.rs -> contains the fn Window:new
+- which calls -> fn dispatch_event
+- window.rs contains the fn dispatch_event
+- which calls -> fn dispatch_key_event and fn dispatch_mouse_event
 ```
 
 ### Zed Youtube Videos
