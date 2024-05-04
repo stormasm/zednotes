@@ -120,27 +120,23 @@ git submodule update --init --recursive
 
 ### How does open_window happen in Zed
 
-zed/src/main.rs
+#### zed/src/main.rs
 
 * see *workspace::open_new* in *restore_or_create_workspace*
-* app.on_reopen
-
-```rust
-rg picker -g Cargo.toml
-rg new_view
-```
-
-### Code flow workspace
-
-```rust
-open_new
-Editor::new_file
-```
 
 #### crates/zed/src/main.rs
 
 ```rust
-initialize_workspace
+- main.rs -> contains the fn main
+- which calls -> fn init_ui
+- main.rs -> init_ui contains the fn initialize_workspace
+- which gets called
+- main.rs -> init_ui contains the fn restore_or_create_workspace
+- which calls -> fn workspace::open_new
+- workspace.rs contains open_new
+- which calls -> fn Workspace::new_local
+- workspace.rs contains new_local
+- which calls -> fn cx.open_window
 ```
 
 #### crates/gpui/src/app.rs
