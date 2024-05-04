@@ -133,6 +133,11 @@ git submodule update --init --recursive
 - which gets called
 - main.rs -> init_ui contains the fn restore_or_create_workspace
 - which calls -> fn workspace::open_new
+```
+
+#### crates/workspace/src/workspace.rs
+
+```rust
 - workspace.rs contains open_new
 - which calls -> fn Workspace::new_local
 - workspace.rs contains new_local
