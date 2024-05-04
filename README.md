@@ -145,6 +145,11 @@ git submodule update --init --recursive
 ```rust
 - app.rs -> contains the fn open_window
 - which calls -> fn Window::new
+```
+
+#### crates/gpui/src/window.rs
+
+```rust
 - window.rs -> contains the fn Window:new
 - which calls -> fn dispatch_event
 - window.rs contains the fn dispatch_event
