@@ -117,6 +117,8 @@ git submodule update --init --recursive
 * [install postgresapp](https://postgresapp.com/downloads.html)
 * [local database setup](https://zed.dev/docs/local-collaboration)
 
+### Code Notes
+
 - [How does open_window happen in Zed ?](./openwindow.md)
 
 ### Zed Youtube Videos
