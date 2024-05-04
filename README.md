@@ -145,12 +145,14 @@ initialize_workspace
 
 #### crates/gpui/src/app.rs
 
+```rust
 - app.rs -> contains the fn *open_window*
 - which calls -> Window::new
 - window.rs -> contains the fn *Window:new*
 - which calls -> *dispatch_event*
 - window.rs contains the fn *dispatch_event*
 - which calls -> *dispatch_key_event* and *dispatch_mouse_event*
+```
 
 ### Zed Youtube Videos
 
