@@ -56,3 +56,34 @@ There is a test in *zed.rs* that probably sheds a lot more light on this topic.
 ```rust
     fn assert_key_bindings_for(
 ```
+
+### node_id & dispatch_path inside dispatch_key_event
+
+```rust
+    fn dispatch_key_event(&mut self, event: &dyn Any) {
+        println!("dispatch_key_event {:?}", std::time::SystemTime::now());
+        if self.window.dirty.get() {
+            self.draw();
+        }
+
+        let node_id = self
+            .window
+            .focus
+            .and_then(|focus_id| {
+                self.window
+                    .rendered_frame
+                    .dispatch_tree
+                    .focusable_node_id(focus_id)
+            })
+            .unwrap_or_else(|| self.window.rendered_frame.dispatch_tree.root_node_id());
+
+        println!("node_id {:?}", node_id);
+
+        let dispatch_path = self
+            .window
+            .rendered_frame
+            .dispatch_tree
+            .dispatch_path(node_id);
+
+        println!("dispatch_path {:?}", dispatch_path);
+```
