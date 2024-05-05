@@ -48,3 +48,11 @@ fn dispatch_action_on_node(&mut self, node_id: DispatchNodeId, action: &dyn Acti
 
     println!("dispatch_action_on_node: {:?}", action);
 ```
+
+### bindings_for_action
+
+There is a test in *zed.rs* that probably sheds a lot more light on this topic.
+
+```rust
+    fn assert_key_bindings_for(
+```
