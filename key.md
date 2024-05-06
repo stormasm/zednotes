@@ -88,6 +88,20 @@ There is a test in *zed.rs* that probably sheds a lot more light on this topic.
         println!("dispatch_path {:?}", dispatch_path);
 ```
 
+- [key_dispatch.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/key_dispatch.rs) contains the method *dispatch_key*
+
+```rust
+if let Some(key_down_event) = event.downcast_ref::<KeyDownEvent>() {
+     let KeymatchResult { bindings, pending } = self
+         .window
+         .rendered_frame
+         .dispatch_tree
+         .dispatch_key(&key_down_event.keystroke, &dispatch_path);
+
+     println!("bindings: {:?}", bindings);
+     println!("pending: {:?}", pending);
+```
+
 ### Reference
 
 - [Bubbling and capturing](https://javascript.info/bubbling-and-capturing)
