@@ -38,3 +38,11 @@ rg match_background
   }
 }
 ```
+
+### Theme key for active file
+
+Which theme key is responsible for setting background color of active file? I've been looking for a long time and can't find it
+
+```rust
+ghost_element.selected
+```
