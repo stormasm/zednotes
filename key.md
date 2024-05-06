@@ -87,3 +87,7 @@ There is a test in *zed.rs* that probably sheds a lot more light on this topic.
 
         println!("dispatch_path {:?}", dispatch_path);
 ```
+
+### Reference
+
+- [Bubbling and capturing](https://javascript.info/bubbling-and-capturing)
