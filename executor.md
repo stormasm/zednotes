@@ -37,6 +37,8 @@ let task = project.rename_entry(entry_to_move, new_path, cx);
 cx.foreground_executor().spawn(task).detach_and_log_err(cx);
 ```
 
+see [task](./task.md) for more details...
+
 ### References
 
 - [std::sync::mpsc](https://doc.rust-lang.org/std/sync/mpsc/index.html)
