@@ -1,4 +1,22 @@
 
+### Make this println! addition to key_dispatch.rs
+
+```rust
+let mut context_stack: SmallVec<[KeyContext; 4]> = SmallVec::new();
+for node_id in dispatch_path {
+    let node = self.node(*node_id);
+
+    if let Some(context) = node.context.clone() {
+        context_stack.push(context);
+    }
+}
+
+println!("dispatch_key: dispatch_path {:?}", dispatch_path);
+
+while !context_stack.is_empty() {
+    let keystroke_matcher = self
+```
+
 ### Documentation
 
 - [Key Dispatch](https://github.com/zed-industries/zed/blob/main/crates/gpui/docs/key_dispatch.md)
