@@ -113,6 +113,8 @@ cx.activate(true);
 git submodule update --init --recursive
 ```
 
+- [The above line is no longer needed as of May 10, 2024](https://github.com/zed-industries/zed/pull/11673)
+
 * [Noted here on how to build Zed on a mac](https://github.com/zed-industries/zed/blob/main/docs/src/developing_zed__building_zed_macos.md)
 * [install postgresapp](https://postgresapp.com/downloads.html)
 * [local database setup](https://zed.dev/docs/local-collaboration)
