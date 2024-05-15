@@ -4,3 +4,8 @@ rg Task\<Result
 ```
 
 see [executor](./executor.md) for more details...
+
+### References
+
+Zed modeled their task system based on Tasks from Microsoft:
+- [Vscode: Integrate with External Tools via Tasks](https://code.visualstudio.com/docs/editor/tasks)
