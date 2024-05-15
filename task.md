@@ -7,5 +7,5 @@ see [executor](./executor.md) for more details...
 
 ### References
 
-Zed modeled their task system based on Microsofts Vscode:
+Zed modeled their task system based on Microsoft's Vscode:
 - [Integrate with External Tools via Tasks](https://code.visualstudio.com/docs/editor/tasks)
