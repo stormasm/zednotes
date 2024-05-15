@@ -9,6 +9,9 @@ The motivation for this concept comes from [Vscode](https://code.visualstudio.co
 rg Task\<Result
 ```
 
+For a great example of how Tasks work inside the Zed source code check out the function
+[parse_markdown_in_background](https://github.com/zed-industries/zed/blob/main/crates/markdown_preview/src/markdown_preview_view.rs#L338)
+
 see [executor](./executor.md) for more details...
 
 ### References
