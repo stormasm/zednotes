@@ -1,4 +1,15 @@
 
+You can now run both types of tests
+
+```rust
+#[test]
+#[gpui::test]
+```
+
+by clicking in the gutter which is to the left of the code where the test code is located...   
+I didn't understand what the "gutter" was until today when someone kindly pointed it out to me on
+[discord](https://discord.com/channels/869392257814519848/873293828805771284/1240353453243629609)
+
 
 ### Model Examples to Understand Zed Tests
 
