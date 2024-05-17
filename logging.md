@@ -1,4 +1,12 @@
 
+
+the LSP log is stored separately from the zed log   
+there should be a command, prefixed by
+
+```rust
+debug: open language server logs
+```
+
 - [simplelog api](https://docs.rs/simplelog/0.12.2/simplelog/)
 - [simplelog](https://github.com/drakulix/simplelog.rs)
 
