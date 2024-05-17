@@ -1,4 +1,13 @@
 
+### Find all references
+
+In order for this to work the Rust Analyzer has to be on...
+Simply highlight the "piece of code" you are interested in and then in the Command Palette
+
+```rust
+editor: find all references
+```
+
 ### how to simulate two instances of zed
 
 i’m doing a lightning talk on zed tonight. does anyone know of an easy way to demo multiplayer coding without another mac? i’m having trouble getting two instances of zed running with separate accounts because of the auto login behavior.
