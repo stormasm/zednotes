@@ -52,6 +52,22 @@ So, using the imperative API is probably a bit easier 😄
 - [discord ref 01](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502)
 - [discord ref 02](https://discord.com/channels/869392257814519848/1199799855007158352/1217280636222443591)
 
+##### May 18, 2024
+
+And the story continues
+
+Roughly, yeah!
+
+today I’d say, any portions of your layout that can be expressed as arrangements of rectangles, you can use divs and the declarative builder
+
+most of the UI in Zed is built this way
+
+when you wanna do something that doesn’t fit that, e.g. a text editor or input element, then you use the imperative API
+
+the builder API is all implemented using the imperative element API, so it’s kind of the lower level of GPUI
+
+- [discord ref 03](https://discord.com/channels/869392257814519848/1199799855007158352/1241603864965283980)
+
 ### Workspaces
 
 The ProjectPanel only gets loaded once in [zed.rs](https://github.com/zed-industries/zed/blob/main/crates/zed/src/zed.rs).  In other words there is only one of them and it is the *Project Panel* on the left side of the screen.
