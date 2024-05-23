@@ -1,4 +1,8 @@
 
+### Go to a Definition in the Editor for Rust Code
+
+Simply hit the Command key and click :smile
+
 ### Find all references
 
 In order for this to work the Rust Analyzer has to be on...
