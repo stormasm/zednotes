@@ -1,7 +1,7 @@
 
 ### Go to a Definition in the Editor for Rust Code
 
-Simply hit the Command key and click :smile
+Simply hit the Command key and click
 
 ### Find all references
 
