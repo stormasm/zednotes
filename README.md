@@ -1,5 +1,7 @@
 
-### Shift Cmd o
+### Search buffer symbols
+
+Shift Cmd o
 
 ### Go to a Definition in the Editor for Rust Code
 
