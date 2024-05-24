@@ -24,3 +24,6 @@ type LspRequest = lsp::request::CodeActionRequest;
 type LspRequest = lsp::request::OnTypeFormatting;
 type LspRequest = lsp::InlayHintRequest;
 ```
+
+### References
+- [lsp](./lsp.md)
