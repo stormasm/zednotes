@@ -12,4 +12,4 @@ impl LanguageServer
 ```
 
 ### References
-- [rust analyzer](./rust-analyzer.md)
+- [rust-analyzer](./rustanalyzer.md)
