@@ -4,8 +4,7 @@ in the
 [extension_api](https://github.com/zed-industries/zed/blob/main/crates/extension_api/src/extension_api.rs).
 
 ```rust
-/// Returns the command used to start the language server for the specified
-/// language.
+/// Returns the command used to start the language server for the specified language.
 fn language_server_command(
     &mut self,
     language_server_id: &LanguageServerId,
