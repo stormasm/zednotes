@@ -1,4 +1,9 @@
 
+- [Lsp Language Servers written in Rust](https://microsoft.github.io/language-server-protocol/implementors/servers/)
+- gleam
+- lox
+- pest
+
 #### This is the code that talks to rust analyzer
 
 - Rust analyzer gets fired up
