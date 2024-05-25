@@ -3,6 +3,16 @@ The way Zed finds the language server for a particular language is via the *lang
 in the
 [extension_api](https://github.com/zed-industries/zed/blob/main/crates/extension_api/src/extension_api.rs).
 
+```rust
+/// Returns the command used to start the language server for the specified
+/// language.
+fn language_server_command(
+    &mut self,
+    language_server_id: &LanguageServerId,
+    worktree: &Worktree,
+) -> Result<Command>;
+```
+
 - [Lsp Language Servers written in Rust](https://microsoft.github.io/language-server-protocol/implementors/servers/)
 - erlang
 - gleam
