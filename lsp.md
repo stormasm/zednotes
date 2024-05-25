@@ -1,5 +1,6 @@
 
 - [Lsp Language Servers written in Rust](https://microsoft.github.io/language-server-protocol/implementors/servers/)
+- erlang
 - gleam
 - lox
 - pest
