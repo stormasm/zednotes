@@ -33,4 +33,5 @@ impl LanguageServer
 ```
 
 ### References
+- [extensions](./extensions.md)
 - [rust-analyzer](./rustanalyzer.md)
