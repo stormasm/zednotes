@@ -1,5 +1,5 @@
 
-I believe the top of the tree on this subject is the
+- I believe the top of the tree on this subject is the
 [ExtensionStore](https://github.com/zed-industries/zed/blob/main/crates/extension/src/extension_store.rs)
 
 - The `ExtensionStore` encapsulates all of the wasmtime logic ?
