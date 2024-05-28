@@ -35,5 +35,5 @@ impl LanguageServer
 ```
 
 ### References
-- [extensions](./extensions.md)
+- [Max on extensions](./extension.md)
 - [rust-analyzer](./rustanalyzer.md)
