@@ -26,5 +26,5 @@ type LspRequest = lsp::InlayHintRequest;
 ```
 
 ### References
-- [extensions](./extensions.md)
+- [extensions](./extension.md)
 - [lsp](./lsp.md)
