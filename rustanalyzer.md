@@ -1,4 +1,15 @@
 
+```rust
+"rust-analyzer": {
+  "binary": {
+    "path": "/usr/local/bin/rust-analyzer",
+    "arguments": []
+  }
+},
+```
+
+- [discord](https://discord.com/channels/869392257814519848/873293828805771284/1245369906451578900)
+
 ### Rust Analyzer in Concert with Zed
 
 - [this is how zed talks to rust analyzer](https://github.com/zed-industries/zed/blob/main/crates/lsp/src/lsp.rs)
