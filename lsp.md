@@ -1,4 +1,9 @@
 
+- languages is for any language-related settings.
+- lsp is for passing specific options to a language server (which could be used for multiple languages)
+
+[discord](https://discord.com/channels/869392257814519848/873293828805771284/1245827506532257862)
+
 - [Blog post by Max: Language Support in Zed Part One](https://zed.dev/blog/language-extensions-part-1)
 
 The way Zed finds the language server for a particular language is via the *language_server_command*
