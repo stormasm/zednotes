@@ -9,7 +9,7 @@
 
 The editor gets initialized the first time
 Zed gets fired up... The *on_action* for *NewWindow* is defined so that
-every time someone triggers the keystroke which fires a
+every time someone triggers the keystroke which fires
 a *NewWindow* it goes to the editor code
 which in turn calls into the workspace code *open_new*.
 
