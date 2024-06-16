@@ -101,3 +101,11 @@ Then he joined Sourcegraph in 2019, where he helped build the first version of B
 You might know Thorsten for his two self-published books: Writing An Interpreter In Go and Writing A Compiler In Go. He also writes a weekly newsletter called Register Spill.
 
 He joined Zed in 2024 to build a text editor that can replace Vim for him and to continue his journey of learning as much as possible about how the great teams build great software.
+
+### Richard Feldman
+---
+Richard created the Roc programming language, wrote the book Elm in Action, and hosts the Software Unscripted podcast. He's been programming for fun since 1995 and for pay since 2004.
+
+Since 2014, Richard has done a lot of professional programming in functional languages like Elm and Haskell, and has used Rust extensively for Roc's compiler. He's taught several courses for Frontend Masters, and has given conference talks on a variety of subjects.
+
+Outside of programming, Richard enjoys Magic: the Gathering, karaoke, and lifting heavy things.
