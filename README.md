@@ -1,4 +1,11 @@
 
+### Top Level Flow for Workspaces
+
+| Key Binding | Action | Command Palette |
+| ----------- | ------ | --------------- |
+| cmd-shift-n | workspace::NewWindow | workspace: new window
+| cmd-o | workspace::Open | workspace: open
+
 ### Search buffer symbols
 
 Shift Cmd o
