@@ -7,9 +7,10 @@
 | cmd-o | workspace::Open | workspace: open
 
 
-So the key point is that in the editor which is initialized the first time
-Zed gets fired up on the *on_action* is defined so everything from here
-on out this is what triggers the *NewWindow* to go to the editor code
+The editor gets initialized the first time
+Zed gets fired up... The *on_action* for *NewWindow* is defined so that
+every time someone triggers the keystroke which fires a
+a *NewWindow* it goes to the editor code
 which in turn calls into the workspace code *open_new*.
 
 ##### editor.rs
@@ -25,6 +26,11 @@ cx.on_action(move |_: &workspace::NewWindow, cx| {
     }
 });
 ```
+
+Note that the on_actions for both *NewFile* and *NewWindow* in the editor
+the code is identical yet in the *open_new* code below its the
+*opened_paths.is_empty()* which drives whether a new Item (see below) shows up in
+the editor or a new workspace window gets init'ed.
 
 ##### workspace.rs
 
