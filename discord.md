@@ -1,4 +1,25 @@
 
+##### Select larger syntax node (Interesting !)
+
+- [discord](https://discord.com/channels/869392257814519848/1250470360139300934/1254718110619930696)
+
+##### File Scan Exclusions
+
+```rust
+"file_scan_exclusions": [
+    "*.ko",
+    "*.cmd",
+    "*.mod",
+    "*.mod.c",
+    "*.o",
+    "*.a",
+    "*.orig",
+    "*.syms"
+  ],
+```
+
+- [discord](https://discord.com/channels/869392257814519848/873293828805771284/1255076249462640703)
+
 ##### March 07, 2024
 
 mikayla —  

@@ -1,4 +1,8 @@
 
+##### Some good notes on global theming
+
+- [discord](https://discord.com/channels/869392257814519848/1199799855007158352/1254580455278379068)
+
 ### Theme key files
 
 [theme/src/schema.rs](https://github.com/zed-industries/zed/blob/998f6cf80d3de4c289869edfa20e847605465776/crates/theme/src/schema.rs)

@@ -1,4 +1,10 @@
 
+##### snippet-completion-server name changed
+
+[discord](https://discord.com/channels/869392257814519848/873293828805771284/1254682833486610514)
+
+### General
+
 - languages is for any language-related settings.
 - lsp is for passing specific options to a language server (which could be used for multiple languages)
 - [discord](https://discord.com/channels/869392257814519848/873293828805771284/1245827506532257862)
