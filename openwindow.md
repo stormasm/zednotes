@@ -12,6 +12,15 @@
 - which calls -> fn workspace::open_new
 ```
 
+#### crates/zed/src/zed.rs
+
+```rust
+- main()
+- init_ui
+- initialize_workspace
+- initialize_pane
+```
+
 #### crates/workspace/src/workspace.rs
 
 ```rust
