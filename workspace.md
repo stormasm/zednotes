@@ -1,4 +1,6 @@
 
+- [What is an Item and a Pane ?](./item.md)
+
 ### Top Level Flow for Workspaces
 
 | Key Binding | Action | Command Palette |
