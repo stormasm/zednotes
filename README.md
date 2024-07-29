@@ -1,20 +1,20 @@
 
-### Top Level Flow for Workspaces
+#### Top Level Flow for Workspaces
 
 | Key Binding | Action | Command Palette |
 | ----------- | ------ | --------------- |
 | cmd-shift-n | workspace::NewWindow | workspace: new window
 | cmd-o | workspace::Open | workspace: open
 
-### Search buffer symbols
+#### Search buffer symbols
 
 Shift Cmd o
 
-### Go to a Definition in the Editor for Rust Code
+#### Go to a Definition in the Editor for Rust Code
 
 Simply hit the Command key and click
 
-### Find all references
+#### Find all references
 
 In order for this to work the Rust Analyzer has to be on...
 Simply highlight the "piece of code" you are interested in and then in the Command Palette
@@ -23,7 +23,11 @@ Simply highlight the "piece of code" you are interested in and then in the Comma
 editor: find all references
 ```
 
-### how to simulate two instances of zed
+#### Top level code flows
+
+- [openwindow.md](./openwindow.md)
+
+#### how to simulate two instances of zed
 
 i’m doing a lightning talk on zed tonight. does anyone know of an easy way to demo multiplayer coding without another mac? i’m having trouble getting two instances of zed running with separate accounts because of the auto login behavior.
 
