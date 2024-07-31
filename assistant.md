@@ -1,4 +1,20 @@
 
+#### How do I turn off the OpenAi Messaging
+
+- [discord](https://discord.com/channels/869392257814519848/1250470360139300934/1268280325025304688)
+
+```rust
+"features": {
+    "inline_completion_provider": "copilot"
+  },
+  "assistant": {
+    "version": "2",
+    "enabled": false
+  },
+```
+
+### Legacy
+
 I haven't compared all of the code that was changed with what you've done, but the "assistant2" has effectively been "killed off."
 
 We decided to improve the original assistant, rather than have a new assistant that feels more like a chat service. We've come to really love the simplicity of the original assistant, where all of the text can be easily edited.
