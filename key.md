@@ -1,6 +1,8 @@
 
 ### Make this println! addition to key_dispatch.rs
 
+- [key_dispatch.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/key_dispatch.rs)
+
 ```rust
 let mut context_stack: SmallVec<[KeyContext; 4]> = SmallVec::new();
 for node_id in dispatch_path {
