@@ -5,7 +5,9 @@ For older notes on this subject see [key.md](./key.md)
 
 #### gpui/src/window.rs
 
+```rust
 pub fn dispatch_event(&mut self, event: PlatformInput) -> DispatchEventResult {
+```
 
 calls into *dispatch_key_event*
 
