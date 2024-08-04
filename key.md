@@ -1,4 +1,6 @@
 
+For newer notes on this subject see [keymap.md](./keymap.md)
+
 ### Make this println! addition to key_dispatch.rs
 
 - [key_dispatch.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/key_dispatch.rs)
