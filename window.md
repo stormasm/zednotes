@@ -1,4 +1,6 @@
 
+- see [keymap](./keymap.md) for the initial window_open sequence
+
 ```rust
 /// Represents the two different phases when dispatching events.
 #[derive(Default, Copy, Clone, Debug, Eq, PartialEq)]
