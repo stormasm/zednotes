@@ -124,6 +124,8 @@ if let Some(key_down_event) = event.downcast_ref::<KeyDownEvent>() {
      println!("pending: {:?}", pending);
 ```
 
+- [storybook keybinding](https://github.com/zed-industries/zed/blob/main/crates/ui/src/key_bindings.rs)
+
 ### Reference
 
 - [Bubbling and capturing](https://javascript.info/bubbling-and-capturing)
