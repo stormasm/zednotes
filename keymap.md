@@ -19,6 +19,8 @@ will also affect *user_keymap_file_rx*
 - reload_keymaps
 - load_default_keymap
 
+### open_window
+
 #### gpui/src/app.rs
 
 ```rust
