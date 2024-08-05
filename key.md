@@ -1,5 +1,5 @@
 
-For newer notes on this subject see [keymap.md](./keymap.md)
+_For newer notes on this subject see [keymap.md](./keymap.md)_
 
 ### Make this println! addition to key_dispatch.rs
 
