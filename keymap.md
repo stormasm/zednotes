@@ -1,7 +1,5 @@
 
-August 2024
-
-For older notes on this subject see [key.md](./key.md)
+_For older notes on this subject see [key.md](./key.md)_
 
 ### handle_keymap_file_changes
 
