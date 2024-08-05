@@ -3,6 +3,22 @@ August 2024
 
 For older notes on this subject see [key.md](./key.md)
 
+#### crates/zed/src/main.rs
+
+If you comment out this line of code keymaps do not work, meaning this is
+where everything kicks off to get keymaps going...
+
+```rust
+handle_keymap_file_changes(user_keymap_file_rx, cx);
+```
+
+will also affect *user_keymap_file_rx*
+
+#### crates/zed/src/zed.rs methods affected by commenting out this line include
+
+- reload_keymaps
+- load_default_keymap
+
 #### gpui/src/app.rs
 
 ```rust
