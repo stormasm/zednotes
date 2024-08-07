@@ -109,3 +109,21 @@ Richard created the Roc programming language, wrote the book Elm in Action, and 
 Since 2014, Richard has done a lot of professional programming in functional languages like Elm and Haskell, and has used Rust extensively for Roc's compiler. He's taught several courses for Frontend Masters, and has given conference talks on a variety of subjects.
 
 Outside of programming, Richard enjoys Magic: the Gathering, karaoke, and lifting heavy things.
+
+### Danilo Leal
+---
+Danilo started on web design the same way many do: after failing to become a musician.
+
+After working with driver-related apps in some of the largest South American startups for a few years, he joined MUI in 2021 as a lead designer to work on prominent React open-source libraries, such as Material UI, Joy UI, and Base UI.
+
+In 2024, he joined Zed as a designer who codes to expand the team’s design force, helping refine the editor itself and push marketing-focused initiatives.
+
+When he’s not looking at a computer screen, Danilo still likes to play music, go to hardcore concerts, and travel.
+
+### Peter Tripp
+---
+Peter has been operating and contributing to Open Source software for more than two decades. He has split his time between production operations and improving developer experience in roles at Columbia University, Chartio and DuckDuckGo among others.
+
+In 2024 he joined Zed to focus on the Zed open source community.
+
+In his free time he enjoys building developer tooling and games for the Playdate console.
