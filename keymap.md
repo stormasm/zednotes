@@ -69,6 +69,10 @@ platform_window.on_input({
  });
 ```
 
+#### Things of note when studying and understanding keymaps
+
+- rg SendKeystrokes
+
 see a simulation / testing scenario with *dispatch_keystroke*
 
 #### interesting methods in gpui/src/key_dispatch.rs

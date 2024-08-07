@@ -3,22 +3,21 @@ _For newer notes on this subject see [keymap.md](./keymap.md)_
 
 ### Make this println! addition to key_dispatch.rs
 
+This will then print out each time you hit a key along with the modifiers.
+
+- [key_dispatch branch](https://github.com/stormasm/zed/tree/key_dispatch)
 - [key_dispatch.rs](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/key_dispatch.rs)
 
 ```rust
-let mut context_stack: SmallVec<[KeyContext; 4]> = SmallVec::new();
-for node_id in dispatch_path {
-    let node = self.node(*node_id);
-
-    if let Some(context) = node.context.clone() {
-        context_stack.push(context);
-    }
-}
-
-println!("dispatch_key: dispatch_path {:?}", dispatch_path);
-
-while !context_stack.is_empty() {
-    let keystroke_matcher = self
+pub fn dispatch_key(
+    &mut self,
+    mut input: SmallVec<[Keystroke; 1]>,
+    keystroke: Keystroke,
+    dispatch_path: &SmallVec<[DispatchNodeId; 32]>,
+) -> DispatchResult {
+    println!("dispatch_key {:?}", keystroke);
+    input.push(keystroke.clone());
+    let (bindings, pending) = self.bindings_for_input(&input, dispatch_path);
 ```
 
 ### Documentation
