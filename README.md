@@ -6,12 +6,16 @@
 | cmd-shift-n | workspace::NewWindow | workspace: new window
 | cmd-o | workspace::Open | workspace: open
 
-#### Outline Panel
+#### Outline Panel & Project Panel
 
 ```rust
-"cmd-shift-o": "outline::Toggle",
+"cmd-b": "workspace::ToggleLeftDock",
 "cmd-shift-b": "outline_panel::ToggleFocus",
+"cmd-shift-e": "project_panel::ToggleFocus",
+"cmd-shift-o": "outline::Toggle",
 ```
+
+* August 2024 - I finally got this concept prior to going to coquille :)
 
 #### Search buffer symbols
 
