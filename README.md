@@ -6,6 +6,13 @@
 | cmd-shift-n | workspace::NewWindow | workspace: new window
 | cmd-o | workspace::Open | workspace: open
 
+#### Outline Panel
+
+```rust
+"cmd-shift-o": "outline::Toggle",
+"cmd-shift-b": "outline_panel::ToggleFocus",
+```
+
 #### Search buffer symbols
 
 Shift Cmd o
