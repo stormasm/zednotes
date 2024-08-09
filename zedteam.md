@@ -127,3 +127,30 @@ Peter has been operating and contributing to Open Source software for more than 
 In 2024 he joined Zed to focus on the Zed open source community.
 
 In his free time he enjoys building developer tooling and games for the Playdate console.
+
+### Notes
+
+- [const STAFF_MEMBERS](https://github.com/zed-industries/zed/blob/main/script/get-preview-channel-changes)
+
+```rust
+// Maintain list manually, as our GitHub organization has community members in it.
+const STAFF_MEMBERS = new Set([
+  "as-cii",
+  "bennetbo",
+  "conradirwin",
+  "danilo-leal",
+  "iamnbutler",
+  "josephtlyons",
+  "jvmncs",
+  "maxbrunsfeld",
+  "maxdeviant",
+  "mikayla-maki",
+  "nathansobo",
+  "notpeter",
+  "osiewicz",
+  "rgbkrk",
+  "rtfeldman",
+  "someonetoignore",
+  "thorstenball",
+]);
+```
