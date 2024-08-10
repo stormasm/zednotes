@@ -1,5 +1,13 @@
 
-#### crates/workspace/src/pane.rs
+### gpui-component branch descriptions
+
+* [gpui-component branches](https://github.com/stormasm/gpui-component/branches/all)
+* command_palette2 adds in some more code for an actual command palette to build, but its still not working
+* loadkeymap3 is the simple version with just jason's code now that we know the keymap is loading
+* loadkeymap2 ties into my zed branch called settings which proves that the keymap file is loading properly
+* closeactiveitem shows this code below working
+
+##### crates/workspace/src/pane.rs
 
 ```rust
 impl Render for Pane {
