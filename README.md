@@ -6,6 +6,16 @@
 | cmd-shift-n | workspace::NewWindow | workspace: new window
 | cmd-o | workspace::Open | workspace: open
 
+#### GoBack and GoForward
+
+"ctrl--": "pane::GoBack",
+"ctrl-shift--": "pane::GoForward",
+
+```rust
+rg "Go Back"
+rg "Go Forward"
+```
+
 #### Outline Panel & Project Panel
 
 ```rust
