@@ -8,10 +8,9 @@
 
 #### GoBack and GoForward
 
+```rust
 "ctrl--": "pane::GoBack",
 "ctrl-shift--": "pane::GoForward",
-
-```rust
 rg "Go Back"
 rg "Go Forward"
 ```
