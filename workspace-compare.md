@@ -1,5 +1,5 @@
 
-### Critical components
+### critical components
 
 - dock.rs
 - item.rs
@@ -7,7 +7,7 @@
 - pane_group.rs
 - workspace.rs
 
-### Zed
+### zed
 
 - dock.rs
 - item.rs
