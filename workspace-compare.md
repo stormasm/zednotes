@@ -1,3 +1,12 @@
+
+### Critical components
+
+- dock.rs
+- item.rs
+- pane.rs
+- pane_group.rs
+- workspace.rs
+
 ### Zed
 
 - dock.rs
