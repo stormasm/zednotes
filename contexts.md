@@ -15,6 +15,24 @@ ModelContext  WindowContext
         ViewContext
 ```
 
+##### Only one AppContext gets instantiated per application
+
+impl AppContext {
+    #[allow(clippy::new_ret_no_self)]
+    pub(crate) fn new(
+        platform: Rc<dyn Platform>,
+        asset_source: Arc<dyn AssetSource>,
+        http_client: Arc<dyn HttpClient>,
+    ) -> Rc<AppCell> {
+        println!("AppContext::new");
+        let executor = platform.background_executor();
+        let foreground_executor = platform.foreground_executor();
+        assert!(
+            executor.is_main_thread(),
+            "must construct App on main thread"
+        );
+
+
 ##### app/model_context.rs
 ```rust
 /// The app context, with specialized behavior for the given model.

@@ -12,4 +12,4 @@ Elements are constructed by calling [`Render::render()`] on the root view of the
 
 - [AppContext](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/app.rs)
 
-AppContext contains the state of the full application, and passed as a reference to a variety of callbacks.  Other contexts such as [ModelContext], [WindowContext], and [ViewContext] deref to this type, making it the most general context type. You need a reference to an `AppContext` to access the state of a [Model]. [More details on contexts](https://github.com/stormasm/zednotes/blob/main/contexts.md)
+Only *one AppContext* gets instantiated per application.  AppContext contains the state of the full application, and passed as a reference to a variety of callbacks.  Other contexts such as [ModelContext], [WindowContext], and [ViewContext] deref to this type, making it the most general context type. You need a reference to an `AppContext` to access the state of a [Model]. [More details on contexts](https://github.com/stormasm/zednotes/blob/main/contexts.md)
