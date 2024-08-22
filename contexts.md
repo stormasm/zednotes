@@ -17,6 +17,7 @@ ModelContext  WindowContext
 
 ##### Only one AppContext gets instantiated per application
 
+```rust
 impl AppContext {
     #[allow(clippy::new_ret_no_self)]
     pub(crate) fn new(
@@ -31,7 +32,7 @@ impl AppContext {
             executor.is_main_thread(),
             "must construct App on main thread"
         );
-
+```
 
 ##### app/model_context.rs
 ```rust
