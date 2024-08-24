@@ -38,4 +38,9 @@ the collab code is present.
 
 where the branch name is overwritten by the stop lights on a mac...
 
-Help is appreciated in fixing this minor detail...
+This is caused by the
+
+render_sign_in_button in the [title_bar crate](https://github.com/zed-industries/zed/blob/main/crates/title_bar/src/title_bar.rs)
+
+going away due to the above code changes --- if there is significant interest in this
+code path we could probably go ahead and fix it...
