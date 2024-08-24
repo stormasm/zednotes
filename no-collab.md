@@ -1,4 +1,6 @@
 
+- [See this branch for the actual working code](https://github.com/stormasm/zed/tree/no-collab)
+
 ## Step One: Remove the collab crate from Zed
 
 ```rust
