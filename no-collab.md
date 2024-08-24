@@ -32,6 +32,8 @@ Again you don't actually have to remove the code if you don't want to.
 Zed works fine with the *collab_ui* code in there but none of the functionality of
 the collab code is present.
 
+- [Remove the collab_ui crate](https://github.com/zed-industries/zed/commit/e6ba7d59b42839bf80b8f7979cc795ab58c6b1ff)
+
 ### A minor bug still exists
 
 where the branch name is overwritten by the stop lights on a mac...
