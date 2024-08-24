@@ -38,7 +38,7 @@ the collab code is present.
 
 where the branch name is overwritten by the stop lights on a mac...
 
-This is caused by the
+This is caused by the title_bar disappearing along with the
 
 render_sign_in_button in the [title_bar crate](https://github.com/zed-industries/zed/blob/main/crates/title_bar/src/title_bar.rs)
 
