@@ -15,6 +15,13 @@ rg "Go Back"
 rg "Go Forward"
 ```
 
+### Tab Switcher
+
+```rust
+"ctrl-tab": "tab_switcher::Toggle",
+"ctrl-shift-tab": ["tab_switcher::Toggle", { "select_last": true }],
+```
+
 #### Outline Panel & Project Panel
 
 ```rust
