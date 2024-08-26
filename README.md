@@ -15,7 +15,7 @@ rg "Go Back"
 rg "Go Forward"
 ```
 
-### Tab Switcher
+#### Tab Switcher
 
 ```rust
 "ctrl-tab": "tab_switcher::Toggle",
