@@ -1,5 +1,6 @@
 
 - [What is an Item and a Pane ?](./item.md)
+- [More details on the Pane](./pane.md)
 
 ### Top Level Flow for Workspaces
 
