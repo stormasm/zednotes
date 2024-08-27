@@ -54,3 +54,7 @@ async fn restore_or_create_workspace(
     Ok(())
 }
 ```
+
+##### zed welcome.rs
+
+- show_wecome_view
