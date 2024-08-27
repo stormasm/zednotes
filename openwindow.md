@@ -10,6 +10,7 @@
 - which gets called
 - main.rs -> init_ui contains the fn restore_or_create_workspace
 - which calls -> fn workspace::open_new
+- which calls -> let task = Workspace::new_local(Vec::new(), app_state, None, cx);
 ```
 
 #### crates/zed/src/zed.rs

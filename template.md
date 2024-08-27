@@ -18,3 +18,9 @@ run_app(app)
 let app = App::new().with_assets(Assets);
 app.run(move |cx| {})
 ```
+
+##### zed workspace.rs
+
+```rust
+new_local
+```
