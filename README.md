@@ -1,4 +1,7 @@
 
+- Different ways or methodologies to kick off Zed
+- [template.md](./template.md)
+
 #### Top Level Flow for Workspaces
 
 | Key Binding | Action | Command Palette |
