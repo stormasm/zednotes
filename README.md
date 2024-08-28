@@ -1,6 +1,6 @@
 
 - Different ways or methodologies to kick off Zed
-- [template.md](./template.md) [openwindow.md](./openwindow.md)
+- [template.md](./template.md); - [openwindow.md](./openwindow.md)
 
 #### Top Level Flow for Workspaces
 
