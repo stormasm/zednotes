@@ -28,6 +28,7 @@ rg "Go Forward"
 #### Outline Panel & Project Panel
 
 ```rust
+"shift-escape": "workspace::ToggleZoom",
 "cmd-b": "workspace::ToggleLeftDock",
 "cmd-shift-b": "outline_panel::ToggleFocus",
 "cmd-shift-e": "project_panel::ToggleFocus",
