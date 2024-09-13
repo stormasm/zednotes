@@ -1,5 +1,6 @@
 
-#### rg "impl ModalView for"
+- rg "impl ModalView for"
+- rg toggle_modal
 
 ```rust
 option command O
