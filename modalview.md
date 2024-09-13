@@ -2,6 +2,12 @@
 - rg "impl ModalView for"
 - rg toggle_modal
 
+##### workspace.rs 
+
+```rust
+pub fn toggle_modal<V: ModalView, B>(&mut self, cx: &mut WindowContext, build: B)
+```
+
 ```rust
 option command O
 
