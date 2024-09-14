@@ -2,6 +2,8 @@
 ### cx.focus_view
 - Research this subject more :)
 
+---
+
 - rg "impl ModalView for"
 - rg toggle_modal
 
