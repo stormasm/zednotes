@@ -1,4 +1,18 @@
 
+in the `tab_switcher` comment out this line of code or any other object that implements `ModalView`
+
+```rust
+impl ModalView for TabSwitcher {}
+```
+
+So I can begin to understand
+
+```rust
+workspace.toggle_modal
+```
+
+---
+
 rg observe_new_views
 
 this is where the `move |workspace: &mut Workspace, cx|` happens !
