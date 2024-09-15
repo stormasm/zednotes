@@ -19,7 +19,7 @@ let app = App::new().with_assets(Assets);
 app.run(move |cx| {})
 ```
 
-##### zed workspace.rs
+##### main.rs
 
 *restore_or_create_workspace* calls into *workspace::open_new* calls into *Workspace::new_local*
 
