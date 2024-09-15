@@ -35,6 +35,41 @@ the code is identical yet in the *open_new* code below its the
 *opened_paths.is_empty()* which drives whether a new Item (see below) shows up in
 the editor or a new workspace window gets init'ed.
 
+
+##### main.rs
+
+```rust
+async fn restore_or_create_workspace(
+    app_state: Arc<AppState>,
+    cx: &mut AsyncAppContext,
+) -> Result<()> {
+    if let Some(locations) = restorable_workspace_locations(cx, &app_state).await {
+        for location in locations {
+            cx.update(|cx| {
+                workspace::open_paths(
+                    location.paths().as_ref(),
+                    app_state.clone(),
+                    workspace::OpenOptions::default(),
+                    cx,
+                )
+            })?
+            .await?;
+        }
+    } else if matches!(KEY_VALUE_STORE.read_kvp(FIRST_OPEN), Ok(None)) {
+        cx.update(|cx| show_welcome_view(app_state, cx))?.await?;
+    } else {
+        cx.update(|cx| {
+            workspace::open_new(Default::default(), app_state, cx, |workspace, cx| {
+                Editor::new_file(workspace, &Default::default(), cx)
+            })
+        })?
+        .await?;
+    }
+
+    Ok(())
+}
+```
+
 ##### workspace.rs
 
 ```rust
