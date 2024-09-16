@@ -1,4 +1,11 @@
 
+
+in gpui try to understand better how to track the focus or know what is focused at the moment
+
+rg FocusHandle
+
+---
+
 in the `tab_switcher` comment out this line of code or any other object that implements `ModalView`
 
 ```rust
