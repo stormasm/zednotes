@@ -6,7 +6,7 @@ rg FocusHandle
 
 ---
 
-come up to speed on slotmap in the context of FocusId
+come up to speed on [slotmap](https://docs.rs/slotmap/1.0.7/slotmap/) in the context of FocusId
 
 slotmap::new_key_type! {
     /// A globally unique identifier for a focusable element.
