@@ -6,6 +6,15 @@ rg FocusHandle
 
 ---
 
+come up to speed on slotmap in the context of FocusId
+
+slotmap::new_key_type! {
+    /// A globally unique identifier for a focusable element.
+    pub struct FocusId;
+}
+
+---
+
 in the `tab_switcher` comment out this line of code or any other object that implements `ModalView`
 
 ```rust
