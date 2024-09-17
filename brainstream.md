@@ -46,3 +46,12 @@ pub fn initialize_workspace(
         let center_pane = workspace.active_pane().clone();
         initialize_pane(workspace, &center_pane, cx);
 ```
+
+#### Ref Big Goal
+
+Attempting to understand how to get gpui-component modal code to sync up with the way Zed works
+so that when I hit a key sequence the modal pops up similar to the way it works in Zed.
+In gpui-component I have to double click my mouse in the modal_story prior to the key shortcut
+popping up the modal view.
+
+- [branch: keybinding_showmodal_02](https://github.com/stormasm/gpui-component/tree/keybinding_showmodal_02)
