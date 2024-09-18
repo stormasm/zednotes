@@ -6,6 +6,16 @@ rg FocusHandle
 
 ---
 
+in window.rs `new_view` is how the system wide entities get inserted into Zed. 
+
+```rust
+impl VisualContext for WindowContext<'_> {
+    fn new_view<V>(
+        &mut self,
+        build_view_state: impl FnOnce(&mut ViewContext<'_, V>) -> V,
+    ) -> Self::Result<View<V>>
+```
+
 come up to speed on [slotmap](https://docs.rs/slotmap/1.0.7/slotmap/) in the context of FocusId
 
 ```rust
