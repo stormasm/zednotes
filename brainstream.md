@@ -1,4 +1,5 @@
 
+rg SubscriberSet
 
 in `gpui` try to understand better how to track the focus or know what is focused at the moment
 
@@ -6,7 +7,7 @@ rg FocusHandle
 
 ---
 
-in window.rs `new_view` is how the system wide entities get inserted into Zed. 
+in window.rs `new_view` is how the system wide entities get inserted into Zed.
 
 ```rust
 impl VisualContext for WindowContext<'_> {
