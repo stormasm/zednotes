@@ -16,7 +16,7 @@ Information: The provider can also provide current state information to observer
 
 The observer pattern is often used in event-driven software to implement distributed event-handling systems. For example, in an auction, the auctioneer is the subject and the bidders are the observers. The auctioneer observes when a paddle is raised, which changes the bid price and broadcasts it to all bidders
 
-in gpui
+in gpui:
 ```rust
 rg SubscriberSet
 ```
