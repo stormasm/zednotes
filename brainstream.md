@@ -1,4 +1,27 @@
 
+rg "emit\("
+
+#### Understand how the pub / sub system works
+
+- starting with `emit`
+- loop
+
+```rust
+/// Emit an event to be handled by any other views that have subscribed via [ViewContext::subscribe].
+pub fn emit<Evt>(&mut self, event: Evt)
+where
+    Evt: 'static,
+    V: EventEmitter<Evt>,
+{
+    let emitter = self.view.model.entity_id;
+    self.app.push_effect(Effect::Emit {
+        emitter,
+        event_type: TypeId::of::<Evt>(),
+        event: Box::new(event),
+    });
+}
+```
+
 rg SubscriberSet
 
 in `gpui` try to understand better how to track the focus or know what is focused at the moment
