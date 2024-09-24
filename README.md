@@ -1,4 +1,11 @@
 
+#### Cargo.toml from loungy
+
+```rust
+gpui = { git = "https://github.com/zed-industries/zed" }
+#gpui = { path = "/Users/matthias/zed/crates/gpui" }
+```
+
 - Different ways or methodologies to kick off Zed
 - [template.md](./template.md) --- [openwindow.md](./openwindow.md)
 
