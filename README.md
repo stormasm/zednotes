@@ -6,6 +6,8 @@ gpui = { git = "https://github.com/zed-industries/zed" }
 #gpui = { path = "/Users/matthias/zed/crates/gpui" }
 ```
 
+#### Cargo.toml from gpui-component
+
 ```rust
 #gpui = { git = "https://github.com/stormasm/zed.git", branch = "emit" }
 gpui = { path = "/Users/ma/j/tmp08/zed/crates/gpui" }
