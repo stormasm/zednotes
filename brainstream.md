@@ -33,6 +33,8 @@ where
 
 rg SubscriberSet
 
+---
+
 in `gpui` try to understand better how to track the focus or know what is focused at the moment
 
 rg FocusHandle
