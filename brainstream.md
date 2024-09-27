@@ -1,4 +1,13 @@
 
+Understand `EventEmitter` in gpui specifically the files:
+
+- window.rs
+- app.rs
+- model_context.rs
+- test_context.rs
+
+---
+
 rg "emit\("
 
 #### Understand how the pub / sub system works
