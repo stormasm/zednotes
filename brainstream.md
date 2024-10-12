@@ -1,5 +1,5 @@
 
-### implement Trait on the type [or struct]
+### implement Trait on the type [struct]
 
 ```rust
 rg "impl Element for"
