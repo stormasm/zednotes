@@ -2,6 +2,15 @@
 #### element.rs
 
 ```rust
+/// Implemented by types that participate in laying out and painting the contents of a window.
+/// Elements form a tree and are laid out according to web-based layout rules, as implemented by Taffy.
+/// You can create custom elements by implementing this trait, see the module-level documentation
+/// for more details.
+pub trait Element: 'static + IntoElement {
+
+/// Implemented by any type that can be converted into an element.
+pub trait IntoElement: Sized {
+
 /// An object that can be drawn to the screen. This is the trait that distinguishes `Views` from
 /// models. Views are drawn to the screen and care about the current window's state, models are not and do not.
 pub trait Render: 'static + Sized {
