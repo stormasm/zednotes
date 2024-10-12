@@ -53,7 +53,7 @@ pub struct AnyView {
 }
 ```
 
-Understand `EventEmitter` in gpui specifically the files:
+### Understand `EventEmitter` in gpui specifically the files:
 
 - window.rs
 - app.rs
