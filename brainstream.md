@@ -66,6 +66,8 @@ pub struct AnyElement(ArenaBox<dyn ElementObject>);
 
 ```
 
+---
+
 ### Understand `EventEmitter` in gpui specifically the files:
 
 - window.rs
