@@ -40,9 +40,17 @@ pub trait RenderOnce: 'static {
     /// which takes a mutable reference.
     fn render(self, cx: &mut WindowContext) -> impl IntoElement;
 }
+```
 
-/// A dynamically typed element that can be used to store any element type.
-pub struct AnyElement(ArenaBox<dyn ElementObject>);
+### structs
+
+```rust
+/// A view is a piece of state that can be presented on screen by implementing the [Render] trait.
+/// Views implement [Element] and can composed with other views, and every window is created with a root view.
+pub struct View<V> {
+    /// A view is just a [Model] whose type implements `Render`, and the model is accessible via this field.
+    pub model: Model<V>,
+}
 
 /// A dynamically-typed handle to a view, which can be downcast to a [View] for a specific type.
 #[derive(Clone, Debug)]
@@ -51,6 +59,11 @@ pub struct AnyView {
     render: fn(&AnyView, &mut WindowContext) -> AnyElement,
     cached_style: Option<StyleRefinement>,
 }
+
+
+/// A dynamically typed element that can be used to store any element type.
+pub struct AnyElement(ArenaBox<dyn ElementObject>);
+
 ```
 
 ### Understand `EventEmitter` in gpui specifically the files:
