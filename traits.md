@@ -1,4 +1,6 @@
 
+#### These are part of the core traits in gpui
+
 #### element.rs
 
 ```rust
