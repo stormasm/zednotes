@@ -112,7 +112,13 @@ pub struct TitleBarSettings(pub bool);
 ## Next item
 ---
 
-Inside *impl Render for TitleBar {*
+Inside
+
+```rust
+impl Render for TitleBar {
+```
+
+Add this line of code
 
 ```rust
 //For hiding Sign in
