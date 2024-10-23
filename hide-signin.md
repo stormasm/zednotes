@@ -1,4 +1,66 @@
 
+## How to Hide Sign-In in Zed
+
+- Thanks to [evanheller](https://github.com/evanheller)
+- [Zed Issue 12325](https://github.com/zed-industries/zed/issues/12325#issuecomment-2432769188)
+- [Zed PR 19581](https://github.com/zed-industries/zed/pull/19581)
+
+More documentation and code for this on my personal branch
+
+- [stormasm hide_signin branch](https://github.com/stormasm/zed/tree/hide_signin)
+
+## Along with step by step code instructions
+
+#### modify default.json
+
+In the file
+
+- [assets/settings/default.json](https://github.com/zed-industries/zed/blob/main/assets/settings/default.json)
+
+add this line
+
+```rust
+"titlebar_signin": false,
+```
+
+which sits in the larger context of
+
+```rust
+"toolbar": {
+  // Whether to display the terminal title in its toolbar.
+  "title": true
+}
+// Set the terminal's font size. If this option is not included,
+// the terminal will default to matching the buffer's font size.
+// "font_size": 15,
+// Set the terminal's font family. If this option is not included,
+// the terminal will default to matching the buffer's font family.
+// "font_family": "Zed Plex Mono",
+// Set the terminal's font fallbacks. If this option is not included,
+// the terminal will default to matching the buffer's font fallbacks.
+// This will be merged with the platform's default font fallbacks
+// "font_fallbacks": ["FiraCode Nerd Fonts"],
+// Sets the maximum number of lines in the terminal's scrollback buffer.
+// Default: 10_000, maximum: 100_000 (all bigger values set will be treated as 100_000), 0 disables the scrolling.
+// Existing terminals will not pick up this change until they are recreated.
+// "max_scroll_history_lines": 10000,
+},
+"titlebar_signin": false,
+"code_actions_on_format": {},
+/// Settings related to running tasks.
+"tasks": {
+"variables": {}
+},
+```
+
+Modify Cargo.toml with one extra dependency
+
+#### crates/title_bar/Cargo.toml
+
+[dependencies]
+anyhow.workspace = true
+
+
 #### crates/title_bar/src/title_bar.rs
 
 ```rust
