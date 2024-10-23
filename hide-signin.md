@@ -55,11 +55,14 @@ which sits in the larger context of
 
 Modify Cargo.toml with one extra dependency
 
-#### crates/title_bar/Cargo.toml
+##### crates/title_bar/Cargo.toml
 
+```rust
 [dependencies]
 anyhow.workspace = true
+```
 
+And modify the file *title_bar.rs* with the following changes
 
 #### crates/title_bar/src/title_bar.rs
 
