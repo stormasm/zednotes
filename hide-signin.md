@@ -89,7 +89,14 @@ Add the following line of code to the above *init* method along with this struct
 TitleBarSettings::register(cx);
 ```
 
-and this struct
+Just above
+
+```rust
+impl Render for TitleBar {
+    fn render(&mut self, cx: &mut ViewContext<Self>) -> impl IntoElement {
+```
+
+add this struct
 
 ```rust
 //Title bar settings
