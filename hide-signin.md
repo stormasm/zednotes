@@ -86,7 +86,7 @@ pub fn init(cx: &mut AppContext) {
 Add the following line of code to the above *init* method along with this struct
 
 ```rust
-*TitleBarSettings::register(cx);*
+TitleBarSettings::register(cx);
 ```
 
 and this struct
