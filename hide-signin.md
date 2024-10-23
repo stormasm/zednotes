@@ -164,6 +164,9 @@ impl Settings for TitleBarSettings {
 }
 ```
 
+## Next item (and finally)
+---
+
 remove references to the method *render_ssh_project_host*
 
 ```rust
@@ -172,7 +175,13 @@ if self.project.read(cx).is_via_ssh() {
 }
 ```
 
-or add truncate here in *render_ssh_project_host*
+or add truncate here in the method
+
+```rust
+render_ssh_project_host
+```
+
+add truncate here
 
 ```rust
 div()
