@@ -175,7 +175,13 @@ if self.project.read(cx).is_via_ssh() {
 }
 ```
 
-or add truncate here in the method
+or add
+
+```rust
+.truncate()
+```
+
+here in the method
 
 ```rust
 render_ssh_project_host
