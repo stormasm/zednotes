@@ -64,7 +64,7 @@ anyhow.workspace = true
 
 And modify the file *title_bar.rs* with the following changes
 
-#### crates/title_bar/src/title_bar.rs
+##### crates/title_bar/src/title_bar.rs
 
 ```rust
 //For settings related to the Title Bar (like hiding Sign in button)
@@ -83,7 +83,13 @@ pub fn init(cx: &mut AppContext) {
 }
 ```
 
-Add *TitleBarSettings::register(cx);* to the init method along with this struct
+Add the following line of code to the above *init* method along with this struct
+
+```rust
+*TitleBarSettings::register(cx);*
+```
+
+and this struct
 
 ```rust
 //Title bar settings
