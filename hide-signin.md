@@ -72,6 +72,9 @@ use anyhow::Result;
 use settings::{Settings, SettingsSources};
 ```
 
+## Next item
+---
+
 ```rust
 pub fn init(cx: &mut AppContext) {
     TitleBarSettings::register(cx);
@@ -89,6 +92,9 @@ Add the following line of code to the above *init* method along with this struct
 TitleBarSettings::register(cx);
 ```
 
+## Next item
+---
+
 Just above
 
 ```rust
@@ -102,6 +108,9 @@ add this struct
 //Title bar settings
 pub struct TitleBarSettings(pub bool);
 ```
+
+## Next item
+---
 
 Inside *impl Render for TitleBar {*
 
@@ -124,6 +133,9 @@ along with this modification
     }
 }
 ```
+
+## Next item
+---
 
 Add this code to the end of the file
 
