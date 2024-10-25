@@ -1,4 +1,19 @@
 
+#### Metal and Wgpu
+
+```rust
+Does zed use wgpu ?  
+I’ve heard it uses metal  
+But wgpu under the hood uses metal too right or something like that
+
+Yaniel   
+no wgpu   
+on macOS it uses metal directly  
+elsewhere Vulkan via a library called blade  
+```
+
+- [Discord Ref](https://discord.com/channels/869392257814519848/873293828805771284/1299413120757923840)
+
 #### Difference between Child and Children
 
 - [youtube](https://www.youtube.com/watch?v=IKk2w5DlrnA)
