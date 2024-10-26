@@ -2,7 +2,7 @@
 #### App & AppContext
 
 App and AppContext are really one in the same in the fact that when
-you fire off a new *App* you simply firing off a new *AppContext*
+you fire off a new *App* you are simply firing off a new *AppContext*
 
 ```rust
 impl App {
