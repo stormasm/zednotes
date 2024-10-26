@@ -1,4 +1,25 @@
 
+#### App & AppContext
+
+App and AppContext are really one in the same in the fact that when
+you fire off a new *App* you simply firing off a new *AppContext*
+
+```rust
+impl App {
+    /// Builds an app with the given asset source.
+    #[allow(clippy::new_without_default)]
+    pub fn new() -> Self {
+        #[cfg(any(test, feature = "test-support"))]
+        log::info!("GPUI was compiled in test mode");
+
+        Self(AppContext::new(
+            current_platform(false),
+            Arc::new(()),
+            Arc::new(NullHttpClient),
+        ))
+    }
+```
+
 #### Metal and Wgpu
 
 ```rust
