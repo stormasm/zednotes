@@ -31,6 +31,8 @@ Yaniel
 no wgpu   
 on macOS it uses metal directly  
 elsewhere Vulkan via a library called blade  
+
+For Linux/Windows it uses blade which has Vulkan and OpenGL ES backends
 ```
 
 - [Discord Ref](https://discord.com/channels/869392257814519848/873293828805771284/1299413120757923840)
