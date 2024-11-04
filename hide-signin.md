@@ -3,6 +3,7 @@
 
 - Thanks to [evanheller](https://github.com/evanheller)
 - [Zed Issue 12325](https://github.com/zed-industries/zed/issues/12325#issuecomment-2432769188)
+- [Zed Discussion 20146](https://github.com/zed-industries/zed/discussions/20146)
 - [Zed PR 19581](https://github.com/zed-industries/zed/pull/19581)
 
 More documentation and code for this on my personal branch
