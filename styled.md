@@ -7,7 +7,7 @@ The only place that gpui_macros is called is in the crate gpui
 
 The only place that gpui_macros is called in gpui is in *styled.rs*
 
-The only place that
+The only place where the Styled trait is used is below.
 
 ```rust
 rg "impl Styled"
