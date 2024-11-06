@@ -69,9 +69,6 @@ crates/gpui/src/elements/uniform_list.rs
 2://! Rather than use the full taffy layout system, uniform_list simply measures
 15:use taffy::style::Overflow;
 
-crates/gpui/Cargo.toml
-106:taffy = "0.4.3"
-
 crates/gpui/src/elements/anchored.rs
 2:use taffy::style::{Display, Position};
 
