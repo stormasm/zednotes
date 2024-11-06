@@ -38,3 +38,43 @@ src/elements/surface.rs
 src/elements/text.rs
 136:impl StyledText {
 ```
+
+---
+
+```rust
+rg taffy
+```
+
+Where taffy is referenced in gpui.
+
+```rust
+crates/gpui/src/gpui.rs
+94:mod taffy;
+147:pub use taffy::{AvailableSpace, LayoutId};
+156:use taffy::TaffyLayoutEngine;
+
+crates/gpui/src/style.rs
+16:pub use taffy::style::{
+
+crates/gpui/src/styled.rs
+12:use taffy::style::{AlignContent, Display};
+
+crates/gpui/src/element.rs
+3://! standards as implemented by [taffy](https://github.com/DioxusLabs/taffy). Most of the time,
+
+crates/gpui/src/elements/div.rs
+40:use taffy::style::Overflow;
+
+crates/gpui/src/elements/uniform_list.rs
+2://! Rather than use the full taffy layout system, uniform_list simply measures
+15:use taffy::style::Overflow;
+
+crates/gpui/Cargo.toml
+106:taffy = "0.4.3"
+
+crates/gpui/src/elements/anchored.rs
+2:use taffy::style::{Display, Position};
+
+crates/gpui/src/elements/list.rs
+19:use taffy::style::Overflow;
+```
