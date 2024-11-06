@@ -78,3 +78,7 @@ crates/gpui/src/elements/anchored.rs
 crates/gpui/src/elements/list.rs
 19:use taffy::style::Overflow;
 ```
+
+#### References
+
+- [Gpui: The Big Picture](https://github.com/zed-industries/zed/tree/main/crates/gpui#the-big-picture)
