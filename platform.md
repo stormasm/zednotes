@@ -18,9 +18,9 @@ And the
 - dispatcher.rs
 - platform.rs
 
-are the same files for both
+are the same files for both wayland and X11
 
-#### platform is referenced in the following gpui places
+#### the platform mod is referenced in the following gpui places
 
 - app.rs
 - gpui.rs
