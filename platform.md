@@ -1,6 +1,21 @@
 
 #### gpui/src/platform
 
+In a simple way you open the platform window and then everything from that
+point on gets written to and read from the handle
+of the underlying platform's window :)
+
+see the following method in *window.rs*
+
+```rust
+impl Window {
+    pub(crate) fn new(
+        handle: AnyWindowHandle,
+        options: WindowOptions,
+        cx: &mut AppContext,
+    ) -> Result<Self> {
+```
+
 There are four traits in platform.rs
 
 - pub(crate) trait Platform: 'static {
