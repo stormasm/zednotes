@@ -5,7 +5,7 @@ In a simple way you open the platform window and then everything from that
 point on gets written to and read from the handle
 of the underlying platform's window :)
 
-see the following method in *window.rs*
+see the following two methods in *window.rs*
 
 ```rust
 impl Window {
@@ -14,6 +14,12 @@ impl Window {
         options: WindowOptions,
         cx: &mut AppContext,
     ) -> Result<Self> {
+```
+
+as well as
+
+```rust
+let mut platform_window = cx.platform.open_window(
 ```
 
 There are four traits in platform.rs
