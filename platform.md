@@ -1,6 +1,13 @@
 
 #### gpui/src/platform
 
+There are four traits in platform.rs
+
+pub(crate) trait Platform: 'static {
+pub(crate) trait PlatformWindow: HasWindowHandle + HasDisplayHandle {
+pub(crate) trait PlatformTextSystem: Send + Sync {
+pub(crate) trait PlatformAtlas: Send + Sync {
+
 All of the platforms have the following files
 
 - dispatcher.rs
