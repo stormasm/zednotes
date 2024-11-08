@@ -1,7 +1,7 @@
 
 #### gpui/src/platform
 
-In a simple way you open the platform window and then everything from that
+In a simple way you *open the platform window* and then everything from that
 point on gets written to and read from the handle
 of the underlying platform's window :)
 
