@@ -19,3 +19,14 @@ And the
 - platform.rs
 
 are the same files for both
+
+#### platform is referenced in the following gpui places
+
+- app.rs
+- gpui.rs
+- interactive.rs
+- text_system.rs
+- window.rs
+- app/text_context.rs
+- text_system/line_layout.rs
+- text_system/line_wrapper.rs
