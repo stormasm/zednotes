@@ -1,8 +1,13 @@
 
+##### discord ref on Render and RenderOnce
+
+- [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1201300216482119691)
+- [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1207423864448094258)
+- [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1208536615279001730)
+- [discord ref](https://discord.com/channels/869392257814519848/1217227325217833043/1217283120336998502)
 - [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1261376409624907836)
 - [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1264850420937920584)
 - [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1275061349831020635)
-- [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1208536615279001730)
 
 Hey all, I'm playing with GPUI and I'm wondering about the difference between the need to impl  Render vs RenderOnce. It seems RenderOnce is nice because I can #[derive(IntoElement)] and add an the object with .child().  I haven't quite grokked the difference though. impl Render is required if I want to call AppContext::new_view.
 
