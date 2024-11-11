@@ -1,4 +1,6 @@
 
+- [This is a list of the gpui elements](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/elements/mod.rs)
+
 ```rust
 rg gpui_macros -g Cargo.toml
 ```
@@ -12,7 +14,7 @@ The only place where the Styled trait is used is below.
 ```rust
 rg "impl Styled"
 ```
-
+---
 ```rust
 src/style.rs
 249:impl Styled for StyleRefinement {
