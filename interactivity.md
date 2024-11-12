@@ -1,4 +1,20 @@
 
+To get interactivity going on any `interactive` div type including
+
+- Button
+- Tab
+- ResizeHandle
+
+in `gpui-component` for example simply
+
+```rust
+impl InteractiveElement for Button {
+    fn interactivity(&mut self) -> &mut gpui::Interactivity {
+        self.base.interactivity()
+    }
+}
+```
+
 ##### div.rs
 
 ```rust
