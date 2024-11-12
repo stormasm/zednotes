@@ -3,7 +3,7 @@
 
 ```rust
 pub struct Interactivity
-put trait InteractiveElement
+pub trait InteractiveElement
 ```
 
 ##### window.rs
