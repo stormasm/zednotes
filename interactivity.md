@@ -1,5 +1,6 @@
 
-To get interactivity going on any `interactive` div type including
+To get interactivity going on any `interactive`
+div type including
 
 - Button
 - Tab
