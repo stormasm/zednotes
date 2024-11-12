@@ -1,0 +1,19 @@
+
+##### div.rs
+
+```rust
+pub struct Interactivity
+put trait InteractiveElement
+```
+
+##### window.rs
+
+```rust
+pub enum ElementId
+```
+
+### References
+
+- [pub enum ElementId](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/window.rs#L4841)
+- [pub struct Interactivity](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/elements/div.rs#L1240)
+- [pub trait InteractiveElement](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/elements/div.rs#L520)
