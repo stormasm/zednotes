@@ -1,4 +1,17 @@
 
+In Zed there are several places in the code base where elements are defined and implemented.
+
+Besides the obvious places like the *gpui* and *ui* crates the following places exist.
+
+You can find these spots in the code base by rip-greping for *prepaint*
+
+- editor/src/element.rs
+- markdown/src/markdown.rs
+- terminal_view/src/terminal_element.rs
+- workspace/src/pane_group.rs
+
+### Legacy Notes
+
 ##### March 17, 2024
 
 ##### Tpisto Question
