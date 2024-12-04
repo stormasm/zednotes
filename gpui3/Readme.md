@@ -7,3 +7,9 @@
 - remove `pub struct WindowContext`
 
 and completely remove the file `view.rs`
+
+On Nov 24 view.rs is removed here with the comment `WIP`   
+It is the first `WIP` after `Checkpoint`
+```rust   
+e28104b2e8b2f7649137dd81411435d02d577be4
+```
