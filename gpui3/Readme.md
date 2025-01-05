@@ -46,12 +46,7 @@ Curious to know what that was....
 
 https://github.com/zed-industries/zed/tree/gpui3
 
-
-
-
-
-
-
+#### Nathan's Legacy Branch work
 
 - working off this [branch](https://github.com/zed-industries/zed/compare/main...gpui3)
 
