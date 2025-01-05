@@ -3,12 +3,12 @@
 
 - [mikayla discord response](https://discord.com/channels/869392257814519848/1199799855007158352/1325367057671258129)
 
-Probably because the ideas are unnecessary
-initially view pointers carried the window a view was being rendered in
-But that got removed as we updated to a rewrite of GPUI
-so Views have kind of been in this strange vestigial area
-for a while where they’re the exact same as Models….
-but all of their methods provide you with a ViewContext so they need a new type
+Probably because the ideas are unnecessary   
+initially view pointers carried the window a view was being rendered in   
+But that got removed as we updated to a rewrite of GPUI   
+so Views have kind of been in this strange vestigial area   
+for a while where they’re the exact same as Models….   
+but all of their methods provide you with a ViewContext so they need a new type   
 but without a ViewContext, that type isn’t needed, meaning we can simplify everything 🙂
 
 #### My question
