@@ -29,15 +29,17 @@ etc....
 
 What have been the lessons learned as the experiment continues...
 
-I kind of find this process fascinating in the respect that Nathan and others are really looking for the correct way forward.
+I kind of find this process fascinating in the respect
+that Nathan and others are really looking for the correct way forward.
 
-Very cool that this is being done 🙂
-What are the main motivating factors and limitations of the current gpui API and what are the goals of the future API ?
-Eliminate GPUI View, ViewContext, and WindowContext types
-storm — Yesterday at 9:54 PM
+Very cool that this is being done 🙂   
+What are the main motivating factors and limitations of the current gpui API and what are the goals of the future API ?   
+
+Eliminate GPUI View, ViewContext, and WindowContext types   
+
 Why is the elimination of GPUI View a goal here ?
 
-What will replace the GPUI View and why will the API be "better" without it ?
+What will replace the GPUI View and why will the API be "better" without it ?   
 The following branch was the first attempt ---- and I guess you all learned something from it that did not work out ?
 
 Curious to know what that was....
