@@ -1,5 +1,5 @@
 
-### Response to my question
+#### Response to my question
 
 - [mikayla discord response](https://discord.com/channels/869392257814519848/1199799855007158352/1325367057671258129)
 
@@ -11,7 +11,7 @@ for a while where they’re the exact same as Models….
 but all of their methods provide you with a ViewContext so they need a new type
 but without a ViewContext, that type isn’t needed, meaning we can simplify everything 🙂
 
-### My question
+#### My question
 
 storm — Jan 4, 2025 gpui forum on Zed at 9:47 PM
 https://github.com/zed-industries/zed/pull/22632
