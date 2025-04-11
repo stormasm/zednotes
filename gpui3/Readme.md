@@ -1,5 +1,5 @@
 
-
+- [NathanSobo: Eliminate GPUI View, ViewContext, and WindowContext types #22632](https://github.com/zed-industries/zed/pull/22632)
 - [discord jan 25, 2025](https://discord.com/channels/869392257814519848/1199799855007158352/1332927093058703432)
 - We're keeping the concept of "view" in the vocabulary, as it's useful shorthand for "entities that are rendered", so I think we'll keep ViewInputHandler
 - [gpui-component upgrade to gpui3](https://github.com/longbridge/gpui-component/pull/587)
