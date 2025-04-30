@@ -257,3 +257,23 @@ git submodule update --init --recursive
 ### Zed Youtube Videos
 
 - [duane bester](https://www.youtube.com/playlist?list=PLzIkykhdNahwxfVbxgZR69TQSsJc-6Rqq)
+
+### Renderer
+
+synchis — 4/21/25, 11:07 AM
+
+is the renderer part of gpui super tied in to how it works? i think it could be useful to have it as a standalone package to use for things
+
+maxdeviant — 4/21/25, 11:09 AM
+
+Depends on what you mean by "the renderer".
+
+The "UI" part of GPUI is pretty integrated.
+
+But the renderer backend is kinda pluggable. Like we have a native Metal render, but we use blade for rendering on Linux/Windows
+
+synchis — 4/21/25, 3:46 PM
+
+renderer here just means "stuff that handles all the drawing to screen parts". so like drawing fonts/lines, doing sdf's etc etc
+
+- [discord link](https://discord.com/channels/869392257814519848/1199799855007158352/1363939215183843358)
