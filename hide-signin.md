@@ -8,7 +8,7 @@
 
 More documentation and code for this on my personal branch
 
-- [stormasm hide_signin branch](https://github.com/stormasm/zed/tree/hide_signin)
+- [stormabq hide_signin branch](https://github.com/stormabq/zed/tree/hide_signin)
 
 ## Along with step by step code instructions
 
