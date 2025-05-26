@@ -1,4 +1,12 @@
 
+
+#### Element Inspector
+
+- May 23, 2025
+- [add initial element inspector for zed development](https://github.com/zed-industries/zed/pull/31315)
+- [mention on discord](https://discord.com/channels/869392257814519848/1199799855007158352/1375624281924436018)
+
+
 #### App & AppContext
 
 App and AppContext are really one in the same in the fact that when
