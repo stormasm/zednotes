@@ -1,4 +1,23 @@
 
+
+
+
+In window.rs there are 11 methods called *paint_xxx* including:
+
+- emoji
+- glyph
+- image
+- layer
+- path
+- quad
+- shadows
+- strikethrough
+- surface
+- svg
+- underline
+
+---
+
 In Zed there are several places in the code base where elements are defined and implemented.
 
 Besides the obvious places like the *gpui* and *ui* crates the following places exist.
@@ -38,4 +57,4 @@ In GPUI, painting your scene involves three traversals of the whole DAG:
 Note that Elements are ephemeral, they only last as long as the View containing them is unchanged. As soon as a new frame detects that their view has been changed, they are tossed out and recomputed. If you want stuff to stick around, you need to tag it with an ElementID and store it in GPUI, where it will only be held as long as the tree still holds that ElementID in that location, or you need to put it in a View.
 Also, if you want to see an existing checkbox implementation in GPUI, you can look at crates/ui/src/components/checkbox
 
-- [ref](https://discord.com/channels/869392257814519848/1199799855007158352/1218957719189586040)
+- [discord ref 3/17/2024](https://discord.com/channels/869392257814519848/1199799855007158352/1218957719189586040)
