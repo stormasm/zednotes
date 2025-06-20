@@ -15,3 +15,4 @@ In summary, request_layout() in GPUI is crucial for maintaining the correct arra
 ### References
 
 - [understanding the role of request_layout](https://medium.com/kotlin-android-chronicle/understanding-the-roles-of-requestlayout-and-invalidate-when-adding-a-view-in-android-93d47be50e1f)
+- [how do I create a new_view inside a component in GPUI ?](https://github.com/zed-industries/zed/discussions/7120)
