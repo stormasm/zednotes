@@ -1,5 +1,5 @@
 
-## How to Build your own standalone gpui repo
+## How to build your own standalone gpui repo
 
 If you see any issues with these instructions let me know and I will
 modify them.
