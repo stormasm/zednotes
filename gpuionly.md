@@ -60,7 +60,7 @@ Modify the top level *Cargo.toml* file in gpui-component
 ```rust
 #gpui = { git = "https://github.com/zed-industries/zed.git" }
 #gpui = { git = "https://github.com/stormasm/gpuionly-250621.git" }
-gpui = { path = "/User/me/gpuionly-250621/crates/gpui" }
+gpui = { path = "/Users/me/gpuionly-250621/crates/gpui" }
 ```
 
 Modify *crates/story/Cargo.toml* in gpui-component.
