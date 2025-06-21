@@ -46,7 +46,7 @@ Modify the top level *Cargo.toml* file in gpui-component
 gpui = { git = "https://github.com/stormasm/gpuionly-250621.git" }
 ```
 
-Modify *crates/story/Cargo.toml*
+Modify *crates/story/Cargo.toml* in gpui-component.
 
 ```rust
 #reqwest_client = { git = "https://github.com/zed-industries/zed.git" }
