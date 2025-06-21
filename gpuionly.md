@@ -26,7 +26,7 @@ modify them.
 - copy and run this script -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250621/blob/main/slimcrate.sh)
 - replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250621/blob/main/Cargo.toml)
 
-##### Make sure it works
+### Make sure it works
 
 Run a couple of the gpui examples
 
