@@ -20,7 +20,7 @@ modify them.
 - util_macros
 - zlog
 
-### How to build your own gpui standalone crate
+### The details of how to do it
 
 - grab a brand new fresh copy of the zed repo
 - copy and run this script -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250621/blob/main/slimcrate.sh)
