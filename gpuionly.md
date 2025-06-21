@@ -25,3 +25,30 @@ modify them.
 - grab a brand new fresh copy of the zed repo
 - copy and run this script -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250621/blob/main/slimcrate.sh)
 - replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250621/blob/main/Cargo.toml)
+
+##### Make sure it works
+
+Run a couple of the gpui examples
+
+```rust
+cargo run --example hello_world
+cargo run --example image_gallery
+```
+
+### How to use it with other gpui repos
+
+I will use [gpui-component](https://github.com/longbridge/gpui-component) as a working example.
+
+Modify the top level *Cargo.toml* file in gpui-component
+
+```rust
+#gpui = { git = "https://github.com/zed-industries/zed.git" }
+gpui = { git = "https://github.com/stormasm/gpuionly-250621.git" }
+```
+
+Modify *crates/story/Cargo.toml*
+
+```rust
+#reqwest_client = { git = "https://github.com/zed-industries/zed.git" }
+reqwest_client = { git = "https://github.com/stormasm/gpuionly-250621.git" }
+```
