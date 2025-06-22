@@ -72,7 +72,7 @@ Modify *crates/story/Cargo.toml* in gpui-component.
 reqwest_client = { path = "/Users/me/gpuionly-250621/crates/reqwest_client" }
 ```
 
-#### Need to figure out the following point
+#### Need to figure out the following point with the repo gpui-component
 
 When referencing a gpui repo locally there are warnings but none when referencing
 gpui remotely on github.
