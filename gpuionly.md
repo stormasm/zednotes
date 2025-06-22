@@ -76,3 +76,5 @@ reqwest_client = { path = "/Users/me/gpuionly-250621/crates/reqwest_client" }
 
 When referencing a gpui repo locally there are warnings but none when referencing
 gpui remotely on github.
+
+Even though there are warnings the applications run fine :)
