@@ -6,6 +6,7 @@ members = [
     "crates/collections",
     "crates/gpui",
     "crates/gpui_macros",
+    "crates/http_client",
     "crates/media",
     "crates/refineable",
     "crates/semantic_version",
@@ -16,6 +17,12 @@ members = [
 
 If you remove the image examples then you no longer need the following dependencies:
 
-- http_client
-- http_client_tls
 - reqwest_client
+
+---
+
+- The crate *sum_tree* needs the crate *zlog* for testing
+
+---
+
+- The crate *reqwest_client* depends on http_client & http_client_tls
