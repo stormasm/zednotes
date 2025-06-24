@@ -70,8 +70,10 @@ gpui = { path = "/Users/ma/j/tmp08/zed/crates/gpui" }
 
 | Key Binding | Action | Command Palette |
 | ----------- | ------ | --------------- |
-| cmd-shift-n | workspace::NewWindow | workspace: new window
-| cmd-o | workspace::Open | workspace: open
+| cmd-shift-~ | workspace::ActivateNextWindow | workspace: activate next window |
+| cmd-shift-w | workspace::CloseWindow | workspace: close window |
+| cmd-shift-n | workspace::NewWindow | workspace: new window |
+| cmd-o | workspace::Open | workspace: open |
 
 #### GoBack and GoForward
 
