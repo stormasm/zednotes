@@ -1,4 +1,41 @@
 
+
+- zed/crates/gpui/build.rs
+- macos-blade
+
+If you compile gpui-component you will see it pull in
+
+- blade-graphics
+- blade-macros
+- blade-util
+
+If you look at Cargo.lock in gpui-component you will see why
+
+Also the source shows this -
+
+```rust
+[[package]]
+name = "gpui"
+version = "0.1.0"
+source = "git+https://github.com/zed-industries/zed.git#a067c16c823354da63966273ac15d1aa93c0e922"
+dependencies = [
+ "anyhow",
+ "as-raw-xcb-connection",
+ "ashpd",
+ "async-task",
+ "bindgen 0.71.1",
+ "blade-graphics",
+ "blade-macros",
+ "blade-util",
+```
+
+Note how it is depending on zed.git which in my particular case is not true.
+
+So does your Cargo.lock file pull in the blade stuff ?     
+It does but it is not showing the source
+
+---
+
 The following crates are needed along with gpui
 
 - collections
