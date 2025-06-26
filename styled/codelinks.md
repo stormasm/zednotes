@@ -3,7 +3,8 @@
 rg tailwindcss
 ```
 
-src/styled.rs
+### src/styled.rs
+
 36:    /// [Docs](https://tailwindcss.com/docs/display)  
 43:    /// [Docs](https://tailwindcss.com/docs/display)  
 50:    /// [Docs](https://tailwindcss.com/docs/whitespace#normal)  
