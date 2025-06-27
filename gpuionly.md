@@ -24,8 +24,8 @@ modify them.
 
 - grab a brand new fresh copy of the zed repo
 - rm -fr .git [this step is not needed unless you want your own repo on github]
-- copy and run this script from the top level of your new repo -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250621/blob/main/slimcrate.sh)
-- replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250621/blob/main/Cargo.toml)
+- copy and run this script from the top level of your new repo -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250627/blob/main/slimcrate.sh)
+- replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250627/blob/main/Cargo.toml)
 
 ### Make sure it works
 
@@ -44,14 +44,14 @@ Modify the top level *Cargo.toml* file in gpui-component
 
 ```rust
 #gpui = { git = "https://github.com/zed-industries/zed.git" }
-gpui = { git = "https://github.com/stormasm/gpuionly-250621.git" }
+gpui = { git = "https://github.com/stormasm/gpuionly-250627.git" }
 ```
 
 Modify *crates/story/Cargo.toml* in gpui-component.
 
 ```rust
 #reqwest_client = { git = "https://github.com/zed-industries/zed.git" }
-reqwest_client = { git = "https://github.com/stormasm/gpuionly-250621.git" }
+reqwest_client = { git = "https://github.com/stormasm/gpuionly-250627.git" }
 ```
 
 ### How to reference gpuionly from your local disk instead of Github
@@ -60,16 +60,16 @@ Modify the top level *Cargo.toml* file in gpui-component
 
 ```rust
 #gpui = { git = "https://github.com/zed-industries/zed.git" }
-#gpui = { git = "https://github.com/stormasm/gpuionly-250621.git" }
-gpui = { path = "/Users/me/gpuionly-250621/crates/gpui" }
+#gpui = { git = "https://github.com/stormasm/gpuionly-250627.git" }
+gpui = { path = "/Users/me/gpuionly-250627/crates/gpui" }
 ```
 
 Modify *crates/story/Cargo.toml* in gpui-component.
 
 ```rust
 #reqwest_client = { git = "https://github.com/zed-industries/zed.git" }
-#reqwest_client = { git = "https://github.com/stormasm/gpuionly-250621.git" }
-reqwest_client = { path = "/Users/me/gpuionly-250621/crates/reqwest_client" }
+#reqwest_client = { git = "https://github.com/stormasm/gpuionly-250627.git" }
+reqwest_client = { path = "/Users/me/gpuionly-250627/crates/reqwest_client" }
 ```
 
 #### Need to figure out the following point with the repo gpui-component
