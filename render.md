@@ -1,4 +1,8 @@
 
+In GPUI, the Render and RenderOnce methods are used for different purposes related to rendering user interface elements. Render is used for continuous, frame-by-frame rendering, while RenderOnce is for a single, one-time rendering pass.
+
+
+
 ##### discord ref on Render and RenderOnce
 
 - [discord ref](https://discord.com/channels/869392257814519848/1199799855007158352/1201300216482119691)
