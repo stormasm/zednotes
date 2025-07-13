@@ -1,5 +1,10 @@
 
 
+##### How to Open a File Prompt
+
+- [discord](https://discord.com/channels/869392257814519848/1199799855007158352/1393938836752695307)
+- in gpui/src/app.rs see prompt_for_paths
+
 #### Element Inspector
 
 - May 23, 2025
