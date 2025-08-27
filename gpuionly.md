@@ -24,8 +24,8 @@ modify them.
 
 - grab a brand new fresh copy of the zed repo
 - rm -fr .git [this step is not needed unless you want your own repo on github]
-- copy and run this script from the top level of your new repo -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250627/blob/main/slimcrate.sh)
-- replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250627/blob/main/Cargo.toml)
+- copy and run this script from the top level of your new repo -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250827/blob/main/slimcrate.sh)
+- replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250827/blob/main/Cargo.toml)
 
 ### Make sure it works
 
