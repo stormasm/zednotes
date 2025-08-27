@@ -27,7 +27,7 @@ modify them.
 - copy and run this script from the top level of your new repo -> [slimcrate.sh](https://github.com/stormasm/gpuionly-250827/blob/main/slimcrate.sh)
 - remove *Cargo.lock*
 - replace the top level *Cargo.toml* file with [this Cargo.toml file](https://github.com/stormasm/gpuionly-250827/blob/main/Cargo.toml)
-- [remove compiler warnings about *cocoa::foundation](https://github.com/stormasm/gpuionly-250827/commit/1ef6083b712a69f572c8c189f1a9fd692ffcc90b)
+- [remove compiler warnings about *cocoa::foundation*](https://github.com/stormasm/gpuionly-250827/commit/1ef6083b712a69f572c8c189f1a9fd692ffcc90b)
 
 ### Make sure it works
 
