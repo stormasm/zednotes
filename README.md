@@ -1,4 +1,8 @@
 
+##### To switch native windows
+
+- Cmd-~
+- Cmd Tilde
 
 ##### Find all References
 
