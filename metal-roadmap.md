@@ -1,7 +1,4 @@
 
-
-gpui: roadmap for deprecated metal crate
-
 I asked a question about this subject on [discord](https://discord.com/channels/869392257814519848/1199799855007158352/1414011431833309225) but got no response
 so I thought it made more sense to file it as an issue to keep track
 of whats going to happen moving forward.
@@ -19,5 +16,4 @@ metal.workspace = true
 
 Blade currently uses objc2 and objc2-metal in the [Blade Renderer](https://github.com/zed-industries/zed/blob/main/crates/gpui/src/platform/blade/blade_renderer.rs)
 
-Wondering if it makes sense to have this be a tracking issue going forward so
-we can document the progress and plan of making this happen in the future ?
+Is this on the Roadmap to happen prior to publishing out gpui to crates.io ?
