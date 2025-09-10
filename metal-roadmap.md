@@ -8,7 +8,7 @@ of whats going to happen moving forward.
 
 gpui uses the [metal crate](https://github.com/gfx-rs/metal-rs) which is deprecated.
 
-There is a note in [gpui Cargo.toml](https://github.com/zed-industries/zed/blob/main/crates/gpui/Cargo.toml) to replace the metal crate with objc2
+There is a `TODO` note in [gpui Cargo.toml](https://github.com/zed-industries/zed/blob/main/crates/gpui/Cargo.toml) to replace the metal crate with objc2
 
 ```rust
 objc2 = { version = "0.6", optional = true }
