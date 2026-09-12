@@ -1,6 +1,6 @@
 
 
-The sum+_ree itself is not persisted as a standalone on-disk format in the crate. In Zed, it’s mostly a persistent in-memory data structure: values are cloned through Arc, and snapshots keep old versions alive cheaply.
+The sum_tree itself is not persisted as a standalone on-disk format in the crate. In Zed, it’s mostly a persistent in-memory data structure: values are cloned through Arc, and snapshots keep old versions alive cheaply.
 
 So the “persistence” code is really the code that stores a SumTree inside snapshot/state objects and reuses it across edits. The clearest places are:
 
