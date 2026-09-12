@@ -3,7 +3,7 @@
 `how is the sum_tree crate used in different ways across the zed editor.
 specifically how is it used in the different crates`
 
-sum\_tree is the shared ordered-storage primitive underneath several Zed crates, but each crate uses it a little differently depending on what it needs: plain ordered collections, keyed lookup, range seeking by summary, or summarized tree maps/sets.
+sum_tree is the shared ordered-storage primitive underneath several Zed crates, but each crate uses it a little differently depending on what it needs: plain ordered collections, keyed lookup, range seeking by summary, or summarized tree maps/sets.
 
 I found usage in these crates, with different patterns:
 
@@ -77,4 +77,9 @@ If you want, I can next break this down crate-by-crate into a table with:
 * what queries it supports,  
 * and the exact files where it’s implemented.
 
-&nbsp;
+---
+
+
+
+
+
