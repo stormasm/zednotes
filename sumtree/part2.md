@@ -1,8 +1,3 @@
-rope science part 2
-
-&nbsp;
-
-&nbsp;
 
 In the [Zed editor](https://zed.dev/) codebase, a **SumTree** is a custom, highly optimized B+ tree data structure featuring polymorphic summaries. Co-founder Nathan Sobo frequently refers to it as "the soul of Zed" because it serves as the underlying backbone for almost every performance-critical feature in the application. \[[1](https://zed.dev/blog/hiring), [2](https://simonwillison.net/2024/Apr/28/zed-decoded-rope-sumtree/)\]
 
@@ -36,7 +31,3 @@ The structure is exceptionally versatile; Zed uses over **20 different implement
 If you want to dive deeper into the implementation details, the team published a deep-dive breakdown on the Zed Decoded: Rope & SumTree Blog Post
 
 If you are looking to work with the data structure directly, would you like me to show you a **Rust code example** of how a custom Summary is implemented, or explore how it powers **Zed's CRDT replication**?
-
-&nbsp;
-
-&nbsp;
