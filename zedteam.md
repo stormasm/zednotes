@@ -391,3 +391,42 @@ Andrew has spent the last decade building developer tools and leading the remote
 He joined Zed in 2026 to help shape the future of collaborative software authorship. After years spent making engineering teams more effective, he was drawn to a company that takes collaboration seriously in both its tooling and its culture.
 
 Andrew lives in Los Angeles with his wife and two kids. He's happiest outdoors, preferably near giant trees and craggy mountains. He takes his coffee and BBQ seriously.
+
+
+### collab seed.default.json
+
+```rust
+{
+  "admins": [
+    "nathansobo",
+    "maxbrunsfeld",
+    "as-cii",
+    "JosephTLyons",
+    "maxdeviant",
+    "SomeoneToIgnore",
+    "mikayla-maki",
+    "agu-z",
+    "osiewicz",
+    "ConradIrwin",
+    "benbrandt",
+    "bennetbo",
+    "smitbarmase",
+    "notpeter",
+    "rgbkrk",
+    "JunkuiZhang",
+    "Anthony-Eid",
+    "rtfeldman",
+    "danilo-leal",
+    "MrSubidubi",
+    "cole-miller",
+    "osyvokon",
+    "probably-neb",
+    "mgsloan",
+    "P1n3appl3",
+    "mslzed",
+    "franciskafyi",
+    "katie-z-geer"
+  ],
+  "channels": ["zed"]
+}
+```
